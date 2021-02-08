@@ -1,4 +1,4 @@
-title: Test Post
+Title: Test Post
 date: 2021-02-07
 author: jenrsparks
 
