@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jen Sparks - Programming</title><link href="/" rel="alternate"></link><link href="/feeds/programming.atom.xml" rel="self"></link><id>/</id><updated>2019-08-18T13:48:00-05:00</updated><subtitle>A personal playground</subtitle><entry><title>DevOps World | Jenkins World 2019</title><link href="/devops-world-jenkins-world-2019.html" rel="alternate"></link><published>2019-08-18T13:48:00-05:00</published><updated>2019-08-18T13:48:00-05:00</updated><author><name>Jen Sparks</name></author><id>tag:None,2019-08-18:/devops-world-jenkins-world-2019.html</id><summary type="html">&lt;p&gt;This week, I had the fortunate opportunity to attend DevOps World / Jenkins World. Cloudbees, the "headline sponsor," shaped the event with a couple of interesting announcements, and several technologies dominated the sessions Tuesday through Thursday.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;First and foremost: &lt;a href="https://kubernetes.io/"&gt;Kubernetes&lt;/a&gt; is leading the game, and is now considered the de facto …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This week, I had the fortunate opportunity to attend DevOps World / Jenkins World. Cloudbees, the "headline sponsor," shaped the event with a couple of interesting announcements, and several technologies dominated the sessions Tuesday through Thursday.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;First and foremost: &lt;a href="https://kubernetes.io/"&gt;Kubernetes&lt;/a&gt; is leading the game, and is now considered the de facto winner of the container wars (at least to date). For those folks who haven't made the move yet, this is step zero. Without it, one is not going to get so many of the gains that come from the rest of the tools, and ultimately is trailing too far behind to be considered relavent. This is one of those cases where it's time to catch up or become obsolete.&lt;/p&gt;
+&lt;p&gt;The next takeaway: we really are landing in a level of maturity wherein the tools can help us to start building our pipelines without needing to know the programmatic components. &lt;a href="https://jenkins-x.io/"&gt;Jenkins X&lt;/a&gt; offers end to end pipeline generation, giving us a framework for CI/CD that plugs straight into our git system and providing GitOps and environment promotion baked right in. While built and touted for it's native Kubernetes integration, it turns out it has equal integration for non-K8S using a feature flag to swap over to classic support. Even if the project isn't quite ready to move to Kubernetes, it can at least make the jump to Jenkins X, using the classic buildpack, and work its way incrementally over to the newer technologies in time.&lt;/p&gt;
+&lt;p&gt;Of course, there are the sponsored products getting highlights that I'm excited to learn more about. Cloudbees has recently made some acquisitions, specifically &lt;a href="https://electric-cloud.com/"&gt;Electric Cloud&lt;/a&gt; and &lt;a href="https://rollout.io/"&gt;Rollout&lt;/a&gt;. With these new features added to their portfolio, it was the perfect time to announce &lt;a href="https://www.cloudbees.com/press/cloudbees-presents-software-delivery-management-sdm-vision-turning-software-delivery-core"&gt;Software Delivery Management&lt;/a&gt;, or SDM for short. Mind you, it was &lt;a href="https://www.cloudbees.com/blog/introducing-software-delivery-management"&gt;mentioned back in April 2019&lt;/a&gt;, however the new tools that have been added have helped solidify the offering even more.&lt;/p&gt;
+&lt;p&gt;There's not a lot of clarity as to how it might integrate with the rest of your toolchain if you're working outside of the Cloudbees ecosystem. More likely than not, this is an angle to bring you all the way in - the appeal of an end to end offering to bring all of your processes into a unified experience, with a consoldiated data lake. When more information comes out, however, I'm hoping that we see a better integration available so that the rest of the best-in-class offerings are accepted as piecemeal connections into the unifying system.&lt;/p&gt;
+&lt;p&gt;The appearance of the &lt;a href="https://cd.foundation/"&gt;Continuous Delivery Foundation&lt;/a&gt;, or CDF, actually helps to encourage that exact culture of interoperability, letting the best-in-class tools thrive alongside each other. There's a lot of maturity in this industry to come, and I'm hopeful for it all.&lt;/p&gt;</content><category term="Programming"></category><category term="CI/CD"></category></entry><entry><title>Splunk REST Calls in Search</title><link href="/splunk-rest-calls-in-search.html" rel="alternate"></link><published>2019-06-30T12:00:00-05:00</published><updated>2019-06-30T12:00:00-05:00</updated><author><name>Jen Sparks</name></author><id>tag:None,2019-06-30:/splunk-rest-calls-in-search.html</id><summary type="html">&lt;p&gt;The Splunk REST API is a powerful thing. You can even call it in your searches using &lt;code&gt;| rest [path]&lt;/code&gt; and get back Splunk data. But what if you want to get dynamic details back, or call several endpoints, without knowing the exact URIs? Turns out, there's a &lt;em&gt;very&lt;/em&gt; awesome way …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Splunk REST API is a powerful thing. You can even call it in your searches using &lt;code&gt;| rest [path]&lt;/code&gt; and get back Splunk data. But what if you want to get dynamic details back, or call several endpoints, without knowing the exact URIs? Turns out, there's a &lt;em&gt;very&lt;/em&gt; awesome way to do this.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;Let's say we want to get all the alerts fired on record. &lt;code&gt;/servicesNS/alerts/fired_alerts&lt;/code&gt; can provide a list of the alerts that have had events, but not the details of those events, such as times or the actions associated with the alert. So starting out with the &lt;code&gt;fired_alerts&lt;/code&gt; endpoint, we'll use the following to get all alerts that belong to someone with 'sparks' in their username:&lt;/p&gt;
+&lt;p&gt;:::SPL
+| rest /servicesNS/alerts/fired_alerts
+| where match(author, "sparks")
+| fields title author link&lt;/p&gt;
+&lt;p&gt;Resulting in the following table output, since behind-the-scenes Splunk turns the REST response into a table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;title&lt;/th&gt;
+&lt;th&gt;author&lt;/th&gt;
+&lt;th&gt;link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;test-alert&lt;/td&gt;
+&lt;td&gt;jsparks&lt;/td&gt;
+&lt;td&gt;/servicesNS/admin/search/alerts/fired_alerts/test-alert&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;test-2&lt;/td&gt;
+&lt;td&gt;sparksma&lt;/td&gt;
+&lt;td&gt;/servicesNS/admin/search/alerts/fired_alerts/test-2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Caveat: I'm only showing a couple of fields here; you can find all of them at the REST API Documentation for &lt;a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/RESTREF/RESTsearch#alerts.2Ffired_alerts"&gt;fired_alerts&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Notice the &lt;code&gt;link&lt;/code&gt; column? This is huge; this means we now know the REST API endpoint for that specific alert, and moreover every alert listed in the response body. So how can we make a call to the results of one search to get the contents of the next?&lt;/p&gt;
+&lt;p&gt;This is where the &lt;a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/SearchReference/Map"&gt;map&lt;/a&gt; command comes into play. The &lt;code&gt;map&lt;/code&gt; command lets us build a subsearch for &lt;em&gt;each row&lt;/em&gt; in the table we already have, meaning that here we can iterate through the various alert entries and get their details back.&lt;/p&gt;
+&lt;p&gt;So if we add the &lt;code&gt;map&lt;/code&gt; command, here's how we can get each of the detailed records back:&lt;/p&gt;
+&lt;p&gt;:::SPL
+| rest /servicesNS/alerts/fired_alerts
+| where match(author, "sparks")
+| map search="| rest $link$"
+| fields savedsearch_name actions sid&lt;/p&gt;
+&lt;p&gt;What we're really doing here is executing a command that says, for each resulting entry listed in the fired alerts, call the &lt;code&gt;alerts/fired_alerts/{name}&lt;/code&gt; endpoint and get me the details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; The results that come back are &lt;em&gt;only&lt;/em&gt; the detail records; those first records we had have been lost in the mapping process.&lt;/p&gt;
+&lt;p&gt;|savedsearch_name|actions|sid|
+|test-alert|email|rt_scheduler__admin__search__test-alert_at_1351181001_5.31|
+|test-2|email,webhook|rt_scheduler__admin__search__test-2_at_1351181023_6.19|
+|test-alert|email|rt_scheduler__admin__search__test-alert_at_1351181009_7.42|&lt;/p&gt;
+&lt;p&gt;It's worth noting that there are some limitations; map cannot be used after an &lt;code&gt;append&lt;/code&gt; command, and it defaults to only making a max of 10 calls (thought this is configurable). As always, I strongly recommend checking out the documentation to understand exactly what you're working with and how to fine tune each command. Additional details can be found at the &lt;a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/RESTREF/RESTsearch#alerts.2Ffired_alerts.2F.7Bname.7D"&gt;fired alerts details&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;The implications of this functionality are pretty fantastic. For this scenario alone, I can build a dashboard, for instance, that lets me see the details of all of the triggered alerts that Splunk has historically (24 hours by default). Or I can build an alert that sends a page if we've had a certain number of alerts triggered overall in a certain period of time. The variances are limited only by the use cases you can think of.&lt;/p&gt;
+&lt;p&gt;On top of that, if you're using a search API call to get your results, this expands the capabilities of manipulation and server-side processing. The cost of making several API calls for sets of results, especially if your Splunk server is somewhere quite remote or you're trying to minimize network traffic, can really be reduced. Assuming your Splunk instance can take more load, you're actually reducing the load on your local process and shifting it upstream. (Of course, depending on how you do this, your Splunk server admins might have something to say about it.)&lt;/p&gt;
+&lt;p&gt;I've got a few places where this is going to help streamline some of my processing, taking me from ~20+ API calls down to 2. Sure, the load is shifted and not necessarily removed, but in my case, that makes a huge difference in performance. After all, Splunk is very good at handling its own API calls and turning them into something useable.&lt;/p&gt;</content><category term="Programming"></category><category term="Splunk"></category></entry><entry><title>Threaded Woes</title><link href="/threaded-woes.html" rel="alternate"></link><published>2017-06-24T00:00:00-05:00</published><updated>2017-06-24T00:00:00-05:00</updated><author><name>Jen Sparks</name></author><id>tag:None,2017-06-24:/threaded-woes.html</id><summary type="html">&lt;p&gt;I'd been banging my head on these logging entries for days. Our recently added audit logs had a frustrating phenomenon; these unrelated strings were ending up in the "object" field when we shouldn't have a value populated there at all.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;Working with Spring, mind you, the class looked something like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'd been banging my head on these logging entries for days. Our recently added audit logs had a frustrating phenomenon; these unrelated strings were ending up in the "object" field when we shouldn't have a value populated there at all.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;Working with Spring, mind you, the class looked something like this:&lt;/p&gt;
+&lt;p&gt;{% highlight java %}
+{% raw %}
+@Component
+public class AuditLogger {
+    @Autowired
+    private Logger logger;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;logSuccessfulLogin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;attemptedUsername&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;addCommand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;login&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addUser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attemptedUsername&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addResult&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;logFailedLogin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;attemptedUsername&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;addCommand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;login&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addUser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attemptedUsername&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addResult&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;failed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;logNonExistantAccessAttempt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;uri&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;addCommand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;non_existant_access&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addUser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addObject&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;uri&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;addResult&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;failed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="c1"&gt;-- private helper methods&lt;/span&gt;
+
+&lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;addObject&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;MDC&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;object&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;addCommand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;MDC&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;command&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;addResult&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;MDC&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;result&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;addUser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;MDC&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;username&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;void&lt;/span&gt; &lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+  &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Everything&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;log&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="n"&gt;itself&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;populated&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;MDC&lt;/span&gt; &lt;span class="n"&gt;based&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;
+  &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;log4j&lt;/span&gt; &lt;span class="n"&gt;configuration&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;nothing&lt;/span&gt; &lt;span class="n"&gt;actually&lt;/span&gt; &lt;span class="n"&gt;needs&lt;/span&gt; &lt;span class="k"&gt;to&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;explicitly&lt;/span&gt; &lt;span class="n"&gt;logged&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;
+  &lt;span class="n"&gt;logger&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p _="%" endhighlight&gt;}
+{% endraw %}&lt;/p&gt;
+&lt;p&gt;Unfortunately, the log entries were coming out with values from prior log entries, as such:&lt;/p&gt;
+&lt;p _="%" endhighlight&gt;{% highlight log %}
+{% raw %}
+2017/06/25 09:02:12 | INFO | command = login, result = success, user = jenny98
+2017/06/25 09:02:19 | INFO | command = login, result = failure, user = hacker5
+2017/06/25 09:02:25 | INFO | command = non_existant_access, result = failed, user = robert.d.johnson, object = /api/lookup?id=1103725
+2017/06/25 09:02:27 | INFO | command = login, result = success, user = orangeuser12, object = /api/lookup?id=1103725
+{% endraw %}&lt;/p&gt;
+&lt;p&gt;Notice the last line, which has the same 'object' shown as the prior log line, even though the 'login' type log entry (populated by 'logSuccessfulLogin' method) doesn't add an 'object' attribute at all.&lt;/p&gt;
+&lt;h2&gt;The Solution&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/MDC.html"&gt;MDC&lt;/a&gt; is a thread-safe log4j utility, but it persists for the life of a thread, much like Java's thread-local. Of course, if the thread goes back into a threadpool and gets reused, there's nothing to clear out the contents of the MDC, which means that the previously added attributes stick around and are logged, even though they aren't logically relevant.&lt;/p&gt;
+&lt;p&gt;The fix here for me was easier than perhaps I expected; all I had to do was clear out the contents of the MDC after the logging was complete.&lt;/p&gt;
+&lt;p&gt;{% highlight java %}
+{% raw %}
+private void log() {
+  // Everything in the log line itself is populated from the MDC based on
+  // the log4j configuration; nothing actually needs to be explicitly logged here
+  logger.info("");&lt;/p&gt;
+&lt;p _="%" endhighlight&gt;// Clear out the MDC contents so that if the thread is reused by the thread pool,
+  // or if the logging is called for a second time within the same thread,
+  // the MDC is in a clean state.
+  MDC.clear();
+}
+{% endraw %}&lt;/p&gt;</content><category term="Programming"></category><category term="Java"></category></entry><entry><title>Mapping a List to Numbered Fields</title><link href="/mapping-a-list-to-numbered-fields.html" rel="alternate"></link><published>2014-06-03T00:00:00-05:00</published><updated>2014-06-03T00:00:00-05:00</updated><author><name>Jen Sparks</name></author><id>tag:None,2014-06-03:/mapping-a-list-to-numbered-fields.html</id><summary type="html">&lt;p&gt;One of my oh-so-favorite (&lt;em&gt;cough&lt;/em&gt;) things to do lately in Java has been mapping one type of object to another with no particular transformation. Among these has been the act of taking a list and shifting its contents into a series of fields, depending on how many items are availble …&lt;/p&gt;</summary><content type="html">&lt;p&gt;One of my oh-so-favorite (&lt;em&gt;cough&lt;/em&gt;) things to do lately in Java has been mapping one type of object to another with no particular transformation. Among these has been the act of taking a list and shifting its contents into a series of fields, depending on how many items are availble in the list. It's been driving me nuts to consider using nested if statements, as such:&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ArbitraryTarget&lt;/span&gt; &lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ArbitraryObject&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I'm sorry, but this is ugly, dense, and generally gross. I needed another solution. It finally occurred to me while staring at the conditions that I could easily just leverage a switch statement; after all, all I was doing was considering an int value repeatedly. Let's see how we can do this a little more elegantly.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ArbitraryTarget&lt;/span&gt; &lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ArbitraryObject&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;maxSize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;NumberUtils&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maxSize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setItem1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Fortunately, I even have Apache Commons functionality to make it a tad bit cleaner, if a bit hackish for repeating &lt;code&gt;3&lt;/code&gt; twice. I could just as easily have done a ternary statement:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;maxSize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It occurs to me that, while perhaps not as clean of a solution, this could be made to be infinitely scalable using reflection. Unfortunately, especially once we get into a higher number of fields (item256?!), there would likely be a performance hit, so it somehow seems prudent to back up and reconsider the design decision behind having numbered fields.&lt;/p&gt;</content><category term="Programming"></category><category term="Java"></category></entry></feed>

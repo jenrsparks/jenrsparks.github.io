@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jen Sparks Atom">
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#666666">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#666666">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#666666">
+
+<meta name="author" content="Jen Sparks" />
+<meta name="description" content="The Splunk REST API is a powerful thing. You can even call it in your searches using | rest [path] and get back Splunk data. But what if you want to get dynamic details back, or call several endpoints, without knowing the exact URIs? Turns out, there&#39;s a very awesome way …" />
+<meta name="keywords" content="Splunk">
+
+
+<meta property="og:site_name" content="Jen Sparks"/>
+<meta property="og:title" content="Splunk REST Calls in Search"/>
+<meta property="og:description" content="The Splunk REST API is a powerful thing. You can even call it in your searches using | rest [path] and get back Splunk data. But what if you want to get dynamic details back, or call several endpoints, without knowing the exact URIs? Turns out, there&#39;s a very awesome way …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/splunk-rest-calls-in-search.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-06-30 12:00:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/jen-sparks.html">
+<meta property="article:section" content="Programming"/>
+<meta property="article:tag" content="Splunk"/>
+<meta property="og:image" content="">
+
+  <title>Jen Sparks &ndash; Splunk REST Calls in Search</title>
+
+</head>
+<body class="dark-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="j/s" title="j/s">
+      </a>
+
+      <h1>
+        <a href="">j/s</a>
+      </h1>
+
+<p>A personal playground</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/test-page.html#test-page">
+                  Test Page
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://github.com/jenrsparks/" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="splunk-rest-calls-in-search">Splunk REST Calls in Search</h1>
+    <p>
+      Posted on Sun 30 June 2019 in <a href="/category/programming.html">Programming</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>The Splunk REST API is a powerful thing. You can even call it in your searches using <code>| rest [path]</code> and get back Splunk data. But what if you want to get dynamic details back, or call several endpoints, without knowing the exact URIs? Turns out, there's a <em>very</em> awesome way to do this.</p>
+<!--more-->
+
+<p>Let's say we want to get all the alerts fired on record. <code>/servicesNS/alerts/fired_alerts</code> can provide a list of the alerts that have had events, but not the details of those events, such as times or the actions associated with the alert. So starting out with the <code>fired_alerts</code> endpoint, we'll use the following to get all alerts that belong to someone with 'sparks' in their username:</p>
+<p>:::SPL
+| rest /servicesNS/alerts/fired_alerts
+| where match(author, "sparks")
+| fields title author link</p>
+<p>Resulting in the following table output, since behind-the-scenes Splunk turns the REST response into a table:</p>
+<table>
+<thead>
+<tr>
+<th>title</th>
+<th>author</th>
+<th>link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test-alert</td>
+<td>jsparks</td>
+<td>/servicesNS/admin/search/alerts/fired_alerts/test-alert</td>
+</tr>
+<tr>
+<td>test-2</td>
+<td>sparksma</td>
+<td>/servicesNS/admin/search/alerts/fired_alerts/test-2</td>
+</tr>
+</tbody>
+</table>
+<p><em>Caveat: I'm only showing a couple of fields here; you can find all of them at the REST API Documentation for <a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/RESTREF/RESTsearch#alerts.2Ffired_alerts">fired_alerts</a>.</em></p>
+<p>Notice the <code>link</code> column? This is huge; this means we now know the REST API endpoint for that specific alert, and moreover every alert listed in the response body. So how can we make a call to the results of one search to get the contents of the next?</p>
+<p>This is where the <a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/SearchReference/Map">map</a> command comes into play. The <code>map</code> command lets us build a subsearch for <em>each row</em> in the table we already have, meaning that here we can iterate through the various alert entries and get their details back.</p>
+<p>So if we add the <code>map</code> command, here's how we can get each of the detailed records back:</p>
+<p>:::SPL
+| rest /servicesNS/alerts/fired_alerts
+| where match(author, "sparks")
+| map search="| rest $link$"
+| fields savedsearch_name actions sid</p>
+<p>What we're really doing here is executing a command that says, for each resulting entry listed in the fired alerts, call the <code>alerts/fired_alerts/{name}</code> endpoint and get me the details.</p>
+<p><strong>Important:</strong> The results that come back are <em>only</em> the detail records; those first records we had have been lost in the mapping process.</p>
+<p>|savedsearch_name|actions|sid|
+|test-alert|email|rt_scheduler__admin__search__test-alert_at_1351181001_5.31|
+|test-2|email,webhook|rt_scheduler__admin__search__test-2_at_1351181023_6.19|
+|test-alert|email|rt_scheduler__admin__search__test-alert_at_1351181009_7.42|</p>
+<p>It's worth noting that there are some limitations; map cannot be used after an <code>append</code> command, and it defaults to only making a max of 10 calls (thought this is configurable). As always, I strongly recommend checking out the documentation to understand exactly what you're working with and how to fine tune each command. Additional details can be found at the <a href="https://docs.splunk.com/Documentation/Splunk/7.3.0/RESTREF/RESTsearch#alerts.2Ffired_alerts.2F.7Bname.7D">fired alerts details</a> documentation.</p>
+<p>The implications of this functionality are pretty fantastic. For this scenario alone, I can build a dashboard, for instance, that lets me see the details of all of the triggered alerts that Splunk has historically (24 hours by default). Or I can build an alert that sends a page if we've had a certain number of alerts triggered overall in a certain period of time. The variances are limited only by the use cases you can think of.</p>
+<p>On top of that, if you're using a search API call to get your results, this expands the capabilities of manipulation and server-side processing. The cost of making several API calls for sets of results, especially if your Splunk server is somewhere quite remote or you're trying to minimize network traffic, can really be reduced. Assuming your Splunk instance can take more load, you're actually reducing the load on your local process and shifting it upstream. (Of course, depending on how you do this, your Splunk server admins might have something to say about it.)</p>
+<p>I've got a few places where this is going to help streamline some of my processing, taking me from ~20+ API calls down to 2. Sure, the load is shifted and not necessarily removed, but in my case, that makes a huge difference in performance. After all, Splunk is very good at handling its own API calls and turning them into something useable.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/splunk.html">Splunk</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 Jen Sparks</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Jen Sparks ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

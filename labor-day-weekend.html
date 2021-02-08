@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jen Sparks Atom">
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#666666">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#666666">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#666666">
+
+<meta name="author" content="Jen Sparks" />
+<meta name="description" content="It&#39;s a three-day weekend, and what does that mean? Well, probably getting sick, because the universe is cruel. But that aside, it&#39;s actually been quite a relaxing one - we had D&amp;D on Saturday, and shortly before I discovered a very cool React project called The Spells of D&amp;D …" />
+<meta name="keywords" content="React">
+
+
+<meta property="og:site_name" content="Jen Sparks"/>
+<meta property="og:title" content="Labor Day Weekend"/>
+<meta property="og:description" content="It&#39;s a three-day weekend, and what does that mean? Well, probably getting sick, because the universe is cruel. But that aside, it&#39;s actually been quite a relaxing one - we had D&amp;D on Saturday, and shortly before I discovered a very cool React project called The Spells of D&amp;D …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/labor-day-weekend.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-09-02 12:15:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/jen-sparks.html">
+<meta property="article:section" content="Updates"/>
+<meta property="article:tag" content="React"/>
+<meta property="og:image" content="">
+
+  <title>Jen Sparks &ndash; Labor Day Weekend</title>
+
+</head>
+<body class="dark-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="j/s" title="j/s">
+      </a>
+
+      <h1>
+        <a href="">j/s</a>
+      </h1>
+
+<p>A personal playground</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/test-page.html#test-page">
+                  Test Page
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://github.com/jenrsparks/" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="labor-day-weekend">Labor Day Weekend</h1>
+    <p>
+      Posted on Mon 02 September 2019 in <a href="/category/updates.html">Updates</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>It's a three-day weekend, and what does that mean? Well, probably getting sick, because the universe is cruel. But that aside, it's actually been quite a relaxing one - we had D&amp;D on Saturday, and shortly before I discovered a <em>very</em> cool React project called <a href="https://dukeflipchart.github.io/dndspells/">The Spells of D&amp;D 5e</a>. It was <em>almost</em> perfect... and hey, I've never played with React before, so why not give it a spin?</p>
+<!--more-->
+
+<p>Backing up a bit - I'm a visualization nerd. Before landing completely in software engineering, I had planned to blend graphic design and programming, two things I'd fallen in love with as a kid.</p>
+<p>So here I am, poking at my news feed on Saturday morning, and this <em>absolutely gorgeous</em> interactive infographic shows up. What's a girl to do? Share it with the rest of her nerdy friends, of course.</p>
+<p>It wasn't long before I poked at the source code. From what I could initially see (despite knowing absolutely nothing of node.js or React), <a href="http://github.com/dukeflipchart">dukeflipchart</a> had started with a <a href="https://github.com/facebook/create-react-app">Create React App</a>, interleaved some specific logic, and integrated the JSON he generated via <a href="https://www.reddit.com/r/DnD/comments/2qs89e/5e_spell_reference_sheets_are_done/">u/Zolo49's spell spreadsheet</a>. He's got a pretty solid explanation of the process on the original page; check it out if you're interested.</p>
+<p>Personally, I wanted to get my hands dirty, so in my Chromebook fashion, I spun up a Codenvy NodeJS project, forked his project, imported it, and got to poking. The scaffolding for leveling, which felt like a really obvious additional filter to be made available.</p>
+<p>The biggest changes to make were:
+- Add another <code>HighlightLabel</code> section for the levels
+- Add functionality for the new section's <code>onClick</code> behavior
+- Change the <code>getHighlightColors</code> logic to consider both the casters and the levels
+- Update the logic behind <code>hasOpacity</code></p>
+<p>That last one took <em>way</em> longer than I'd like to admit. I probably spent a couple hours going in circles, trying to find why logic in one place was behaving so different from another place. While I'm tempted to blame the sick on this, realistically, I just don't know the frameworks being used here, so a lot of the more implicit things (such as these seemingly arbitrary property names) just weren't clicking for me.</p>
+<p>Sleeping on it seemed to do the trick - when I looked again this morning, tracing line for line, I finally spotted it, and it was such an easy change, it was embarrassing. But it was finished, so all that was left to figure out was publishing to Github-pages, which <em>should</em> have been easy, except it took me a while more flailing to figure out the right way to get npm to use my personal access token.</p>
+<p>Finally, though, it's here - <a href="https://jenrsparks.github.io/dndspells/">The Spells of D&amp;D 5E</a>.</p>
+<p>After spamming the same nerdy friends, a couple items were flagged for possible improvements:
+- Linking to spell descriptions / details
+- Additional classes added</p>
+<p>The former should be easy, and the latter... well, as <a href="http://github.com/dukeflipchart">dukeflipchart</a> said, it's time consuming. But maybe worth it.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/react.html">React</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 Jen Sparks</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Jen Sparks ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

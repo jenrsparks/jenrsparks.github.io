@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jen Sparks Atom">
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#666666">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#666666">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#666666">
+
+<meta name="author" content="Jen Sparks" />
+<meta name="description" content="This week, I had the fortunate opportunity to attend DevOps World / Jenkins World. Cloudbees, the &#34;headline sponsor,&#34; shaped the event with a couple of interesting announcements, and several technologies dominated the sessions Tuesday through Thursday. First and foremost: Kubernetes is leading the game, and is now considered the de facto …" />
+<meta name="keywords" content="CI/CD">
+
+
+<meta property="og:site_name" content="Jen Sparks"/>
+<meta property="og:title" content="DevOps World | Jenkins World 2019"/>
+<meta property="og:description" content="This week, I had the fortunate opportunity to attend DevOps World / Jenkins World. Cloudbees, the &#34;headline sponsor,&#34; shaped the event with a couple of interesting announcements, and several technologies dominated the sessions Tuesday through Thursday. First and foremost: Kubernetes is leading the game, and is now considered the de facto …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/devops-world-jenkins-world-2019.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-08-18 13:48:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/jen-sparks.html">
+<meta property="article:section" content="Programming"/>
+<meta property="article:tag" content="CI/CD"/>
+<meta property="og:image" content="">
+
+  <title>Jen Sparks &ndash; DevOps World | Jenkins World 2019</title>
+
+</head>
+<body class="dark-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="j/s" title="j/s">
+      </a>
+
+      <h1>
+        <a href="">j/s</a>
+      </h1>
+
+<p>A personal playground</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/test-page.html#test-page">
+                  Test Page
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://github.com/jenrsparks/" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="devops-world-jenkins-world-2019">DevOps World | Jenkins World 2019</h1>
+    <p>
+      Posted on Sun 18 August 2019 in <a href="/category/programming.html">Programming</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>This week, I had the fortunate opportunity to attend DevOps World / Jenkins World. Cloudbees, the "headline sponsor," shaped the event with a couple of interesting announcements, and several technologies dominated the sessions Tuesday through Thursday.</p>
+<!--more-->
+
+<p>First and foremost: <a href="https://kubernetes.io/">Kubernetes</a> is leading the game, and is now considered the de facto winner of the container wars (at least to date). For those folks who haven't made the move yet, this is step zero. Without it, one is not going to get so many of the gains that come from the rest of the tools, and ultimately is trailing too far behind to be considered relavent. This is one of those cases where it's time to catch up or become obsolete.</p>
+<p>The next takeaway: we really are landing in a level of maturity wherein the tools can help us to start building our pipelines without needing to know the programmatic components. <a href="https://jenkins-x.io/">Jenkins X</a> offers end to end pipeline generation, giving us a framework for CI/CD that plugs straight into our git system and providing GitOps and environment promotion baked right in. While built and touted for it's native Kubernetes integration, it turns out it has equal integration for non-K8S using a feature flag to swap over to classic support. Even if the project isn't quite ready to move to Kubernetes, it can at least make the jump to Jenkins X, using the classic buildpack, and work its way incrementally over to the newer technologies in time.</p>
+<p>Of course, there are the sponsored products getting highlights that I'm excited to learn more about. Cloudbees has recently made some acquisitions, specifically <a href="https://electric-cloud.com/">Electric Cloud</a> and <a href="https://rollout.io/">Rollout</a>. With these new features added to their portfolio, it was the perfect time to announce <a href="https://www.cloudbees.com/press/cloudbees-presents-software-delivery-management-sdm-vision-turning-software-delivery-core">Software Delivery Management</a>, or SDM for short. Mind you, it was <a href="https://www.cloudbees.com/blog/introducing-software-delivery-management">mentioned back in April 2019</a>, however the new tools that have been added have helped solidify the offering even more.</p>
+<p>There's not a lot of clarity as to how it might integrate with the rest of your toolchain if you're working outside of the Cloudbees ecosystem. More likely than not, this is an angle to bring you all the way in - the appeal of an end to end offering to bring all of your processes into a unified experience, with a consoldiated data lake. When more information comes out, however, I'm hoping that we see a better integration available so that the rest of the best-in-class offerings are accepted as piecemeal connections into the unifying system.</p>
+<p>The appearance of the <a href="https://cd.foundation/">Continuous Delivery Foundation</a>, or CDF, actually helps to encourage that exact culture of interoperability, letting the best-in-class tools thrive alongside each other. There's a lot of maturity in this industry to come, and I'm hopeful for it all.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/cicd.html">CI/CD</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 Jen Sparks</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Jen Sparks ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

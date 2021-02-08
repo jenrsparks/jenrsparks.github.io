@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jen Sparks Atom">
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#666666">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#666666">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#666666">
+
+<meta name="author" content="Jen Sparks" />
+<meta name="description" content="I&#39;d been banging my head on these logging entries for days. Our recently added audit logs had a frustrating phenomenon; these unrelated strings were ending up in the &#34;object&#34; field when we shouldn&#39;t have a value populated there at all. Working with Spring, mind you, the class looked something like …" />
+<meta name="keywords" content="Java">
+
+
+<meta property="og:site_name" content="Jen Sparks"/>
+<meta property="og:title" content="Threaded Woes"/>
+<meta property="og:description" content="I&#39;d been banging my head on these logging entries for days. Our recently added audit logs had a frustrating phenomenon; these unrelated strings were ending up in the &#34;object&#34; field when we shouldn&#39;t have a value populated there at all. Working with Spring, mind you, the class looked something like …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/threaded-woes.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-06-24 00:00:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/jen-sparks.html">
+<meta property="article:section" content="Programming"/>
+<meta property="article:tag" content="Java"/>
+<meta property="og:image" content="">
+
+  <title>Jen Sparks &ndash; Threaded Woes</title>
+
+</head>
+<body class="dark-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="j/s" title="j/s">
+      </a>
+
+      <h1>
+        <a href="">j/s</a>
+      </h1>
+
+<p>A personal playground</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/test-page.html#test-page">
+                  Test Page
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://github.com/jenrsparks/" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="threaded-woes">Threaded Woes</h1>
+    <p>
+      Posted on Sat 24 June 2017 in <a href="/category/programming.html">Programming</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I'd been banging my head on these logging entries for days. Our recently added audit logs had a frustrating phenomenon; these unrelated strings were ending up in the "object" field when we shouldn't have a value populated there at all.</p>
+<!--more-->
+
+<p>Working with Spring, mind you, the class looked something like this:</p>
+<p>{% highlight java %}
+{% raw %}
+@Component
+public class AuditLogger {
+    @Autowired
+    private Logger logger;</p>
+<div class="highlight"><pre><span></span><code><span class="k">public</span> <span class="n">void</span> <span class="n">logSuccessfulLogin</span><span class="p">(</span><span class="n">String</span> <span class="n">attemptedUsername</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">addCommand</span><span class="p">(</span><span class="ss">&quot;login&quot;</span><span class="p">);</span>
+  <span class="n">addUser</span><span class="p">(</span><span class="n">attemptedUsername</span><span class="p">);</span>
+  <span class="n">addResult</span><span class="p">(</span><span class="ss">&quot;success&quot;</span><span class="p">);</span>
+  <span class="n">log</span><span class="p">();</span>
+<span class="err">}</span>
+
+<span class="k">public</span> <span class="n">void</span> <span class="n">logFailedLogin</span><span class="p">(</span><span class="n">String</span> <span class="n">attemptedUsername</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">addCommand</span><span class="p">(</span><span class="ss">&quot;login&quot;</span><span class="p">);</span>
+  <span class="n">addUser</span><span class="p">(</span><span class="n">attemptedUsername</span><span class="p">);</span>
+  <span class="n">addResult</span><span class="p">(</span><span class="ss">&quot;failed&quot;</span><span class="p">);</span>
+  <span class="n">log</span><span class="p">();</span>
+<span class="err">}</span>
+
+<span class="k">public</span> <span class="n">void</span> <span class="n">logNonExistantAccessAttempt</span><span class="p">(</span><span class="n">String</span> <span class="n">uri</span><span class="p">,</span> <span class="n">String</span> <span class="n">username</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">addCommand</span><span class="p">(</span><span class="ss">&quot;non_existant_access&quot;</span><span class="p">);</span>
+  <span class="n">addUser</span><span class="p">(</span><span class="n">username</span><span class="p">);</span>
+  <span class="n">addObject</span><span class="p">(</span><span class="n">uri</span><span class="p">);</span>
+  <span class="n">addResult</span><span class="p">(</span><span class="ss">&quot;failed&quot;</span><span class="p">);</span>
+  <span class="n">log</span><span class="p">();</span>
+<span class="err">}</span>
+
+<span class="o">//</span> <span class="c1">-- private helper methods</span>
+
+<span class="n">private</span> <span class="n">void</span> <span class="n">addObject</span><span class="p">(</span><span class="n">String</span> <span class="n">value</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">MDC</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="ss">&quot;object&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+<span class="err">}</span>
+
+<span class="n">private</span> <span class="n">void</span> <span class="n">addCommand</span><span class="p">(</span><span class="n">String</span> <span class="n">value</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">MDC</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="ss">&quot;command&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+<span class="err">}</span>
+
+<span class="n">private</span> <span class="n">void</span> <span class="n">addResult</span><span class="p">(</span><span class="n">String</span> <span class="n">value</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">MDC</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="ss">&quot;result&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+<span class="err">}</span>
+
+<span class="n">private</span> <span class="n">void</span> <span class="n">addUser</span><span class="p">(</span><span class="n">String</span> <span class="n">value</span><span class="p">)</span> <span class="err">{</span>
+  <span class="n">MDC</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="ss">&quot;username&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+<span class="err">}</span>
+
+<span class="n">private</span> <span class="n">void</span> <span class="n">log</span><span class="p">()</span> <span class="err">{</span>
+  <span class="o">//</span> <span class="n">Everything</span> <span class="k">in</span> <span class="n">the</span> <span class="n">log</span> <span class="n">line</span> <span class="n">itself</span> <span class="k">is</span> <span class="n">populated</span> <span class="k">from</span> <span class="n">the</span> <span class="n">MDC</span> <span class="n">based</span> <span class="k">on</span>
+  <span class="o">//</span> <span class="n">the</span> <span class="n">log4j</span> <span class="n">configuration</span><span class="p">;</span> <span class="k">nothing</span> <span class="n">actually</span> <span class="n">needs</span> <span class="k">to</span> <span class="n">be</span> <span class="n">explicitly</span> <span class="n">logged</span> <span class="n">here</span>
+  <span class="n">logger</span><span class="p">.</span><span class="n">info</span><span class="p">(</span><span class="ss">&quot;&quot;</span><span class="p">);</span>
+<span class="err">}</span>
+</code></pre></div>
+
+
+<p _="%" endhighlight>}
+{% endraw %}</p>
+<p>Unfortunately, the log entries were coming out with values from prior log entries, as such:</p>
+<p _="%" endhighlight>{% highlight log %}
+{% raw %}
+2017/06/25 09:02:12 | INFO | command = login, result = success, user = jenny98
+2017/06/25 09:02:19 | INFO | command = login, result = failure, user = hacker5
+2017/06/25 09:02:25 | INFO | command = non_existant_access, result = failed, user = robert.d.johnson, object = /api/lookup?id=1103725
+2017/06/25 09:02:27 | INFO | command = login, result = success, user = orangeuser12, object = /api/lookup?id=1103725
+{% endraw %}</p>
+<p>Notice the last line, which has the same 'object' shown as the prior log line, even though the 'login' type log entry (populated by 'logSuccessfulLogin' method) doesn't add an 'object' attribute at all.</p>
+<h2>The Solution</h2>
+<p><a href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/MDC.html">MDC</a> is a thread-safe log4j utility, but it persists for the life of a thread, much like Java's thread-local. Of course, if the thread goes back into a threadpool and gets reused, there's nothing to clear out the contents of the MDC, which means that the previously added attributes stick around and are logged, even though they aren't logically relevant.</p>
+<p>The fix here for me was easier than perhaps I expected; all I had to do was clear out the contents of the MDC after the logging was complete.</p>
+<p>{% highlight java %}
+{% raw %}
+private void log() {
+  // Everything in the log line itself is populated from the MDC based on
+  // the log4j configuration; nothing actually needs to be explicitly logged here
+  logger.info("");</p>
+<p _="%" endhighlight>// Clear out the MDC contents so that if the thread is reused by the thread pool,
+  // or if the logging is called for a second time within the same thread,
+  // the MDC is in a clean state.
+  MDC.clear();
+}
+{% endraw %}</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/java.html">Java</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 Jen Sparks</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Jen Sparks ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

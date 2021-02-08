@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/monokai.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jen Sparks Atom">
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#666666">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#666666">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#666666">
+
+<meta name="author" content="Jen Sparks" />
+<meta name="description" content="Here we are, nearly 2 years later. I&#39;ve changed jobs (and actually my career as a whole), gotten married, and a dozen other smaller but equally important things. And yet this place has been relative neglected, always a consideration but not something I&#39;ve put the time into picking back up …" />
+<meta name="keywords" content="Chromebook">
+
+
+<meta property="og:site_name" content="Jen Sparks"/>
+<meta property="og:title" content="Reboot 2019 - Jekyll, Codenvy, and CSS"/>
+<meta property="og:description" content="Here we are, nearly 2 years later. I&#39;ve changed jobs (and actually my career as a whole), gotten married, and a dozen other smaller but equally important things. And yet this place has been relative neglected, always a consideration but not something I&#39;ve put the time into picking back up …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/reboot-2019-jekyll-codenvy-and-css.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-04-27 12:00:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/jen-sparks.html">
+<meta property="article:section" content="Updates"/>
+<meta property="article:tag" content="Chromebook"/>
+<meta property="og:image" content="">
+
+  <title>Jen Sparks &ndash; Reboot 2019 - Jekyll, Codenvy, and CSS</title>
+
+</head>
+<body class="dark-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="j/s" title="j/s">
+      </a>
+
+      <h1>
+        <a href="">j/s</a>
+      </h1>
+
+<p>A personal playground</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/test-page.html#test-page">
+                  Test Page
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://github.com/jenrsparks/" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="reboot-2019-jekyll-codenvy-and-css">Reboot 2019 - Jekyll, Codenvy, and CSS</h1>
+    <p>
+      Posted on Sat 27 April 2019 in <a href="/category/updates.html">Updates</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Here we are, nearly 2 years later. I've changed jobs (and actually my career as a whole), gotten married, and a dozen other smaller but equally important things. And yet this place has been relative neglected, always a consideration but not something I've put the time into picking back up.</p>
+<!--more-->
+
+<p>So first thing's first - the site has been ported into a fork of <a href="https://github.com/poole/hyde">pool/hyde</a>, with some customization of the fonts in use. In particular, we've got <a href="https://fonts.google.com/selection?selection.family=Cinzel+Decorative">Cinzel Decorative</a>, <a href="https://fonts.google.com/selection?selection.family=Cinzel">Cinzel</a>, and <a href="https://fonts.google.com/selection?selection.family=Raleway">Raleway</a>, three beautiful fonts from <a href="https://fonts.google.com">Google Fonts</a>. I've additionaly made some shifts to get things up to the latest version of Github.io support -- moving from pygments to rouge in particular mitigated several critical errors keeping the site from running.</p>
+<p>Mind you, a lot of this came about because I've finally gotten a new computer - my 2013 laptop, while still running, just isn't cutting it, and can't be pulled from power anymore. In addition, it doesn't always like to start, or just gives a black screen on startup, which is downright terrifying. So I broke down and got myself a Pixelbook - circa 2017, these guys are still killer, and with the Chrome OS paradigm, everything lives in the cloud. But that means... Where's the runtime environment?</p>
+<p>I've managed to stumble my way into <a href="https://codenvy.io">Codenvy</a> with Jekyll, surprising even myself in that I've never really worked with Docker, and it seems like a lot of the initial love for it has faded in the last year. Google searches only got me part of the way, and the rest was a fumble trying to get things working.</p>
+<p><strong>Step one:</strong> a custom stack to run Jekyll. Turns out, you need something with at least 2.4.0 Ruby, plus jekyll and maybe bundler, depending on the site structure. So my stack definition came out to be:</p>
+<p _="%" endhighlight>{% highlight unix %}
+FROM eclipse/ruby_rails
+RUN sudo gem install jekyll
+EXPOSE 4000</p>
+<p><strong>Step two:</strong> create the workspace, including specifying your projects from Github. What's great is that in my case, I ended up renaming my original github.io site as <code>sitename_old</code>, then forking hyde to be <code>sitename</code>. Fortunately I had the foresight to create my Codenvy account with Github credentials, so that authentication was trivialized.</p>
+<p><strong>Step three:</strong> get it working! Realisically, that meant running the forked hyde site, getting the right gems installed locally, and resolving the startup errors that happened from progression of the github.io support (specifically moving the highlighter engine from pygments to rouge).</p>
+<p><strong>Step four:</strong> copy over the posts, resolve the errors, run, and validate. In this case, I got lucky - most of the posts were clean and didn't require any sort of tweaks on their yaml definitions. I'm not thrilled with having the whole darned post showing up instead of snippets, but there's lots of time for tweaks and adjustments.</p>
+<p>There are a ton more little additions I've got, both completed and in the works. My favorite so far is <a href="https://github.com/tholman/github-corners">tholman's github-corners</a> -- you'll see him up at the top (where you can find the link to the source of this site). It's purely SVG based, and with a couple tweaks, I was able to get it to follow the dynamic theme of the site as well!</p>
+<p>More coming soon!</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/chromebook.html">Chromebook</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 Jen Sparks</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Jen Sparks ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
