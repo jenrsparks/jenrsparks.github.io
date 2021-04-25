@@ -1,12 +1,11 @@
 <div class="col pt-4" style="background-color: #888">
-  <div> <!-- fixed option here? -->
+  <!-- 'fixed' option below here to keep the top sticky bar from overlapping the top -->
+  <div style="position:fixed">
     <ul>
-      {% for i in [1,2,3,4,5,6,7,8,9] %}
-        <p>{{ i }}</p>
-      {% endfor %}
-
       {% for category, articles in categories | sort %}
-        <li>{{ category.name }}</li>
+        <li>
+          <a href="{{ SITEURL }}/{{ category.page_name }}.html">{{ category }}</a>
+        </li>
       {% endfor %}
     </ul>
   </div>
