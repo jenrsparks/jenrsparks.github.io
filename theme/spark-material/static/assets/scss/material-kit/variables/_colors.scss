@@ -313,3 +313,14 @@ $black-color: #000000;
 $rgb-black: "0,0,0" !default;
 $white-color: #ffffff;
 $rgb-white: "255,255,255" !default;
+
+// Colors from http://colormind.io/bootstrap/
+$cm-light:      #F0F2F0 !default; // light (background or inverse text) - 'gray nurse'
+$cm-accentl:    #898A91 !default;// light accent - 'oslo gray'
+$cm-primary:    #D93218 !default; // main brand color - 'Thunderbird'
+$cm-secondary:  #792823 !default; // secondary brand color - dark red
+$cm-accentd:    #5e5e63 !default; // dark accent - 'mid gray'
+$cm-dark:       #1d1d1f !default; // dark (text or inverse background) - 'shark'
+$cm-success:    #6f9f46 !default;	// success - 'apple'
+$cm-warn:	      #ed8f0e !default;	// warning - gamboge
+$cm-danger:	    #f44336 !default; // danger - pomegranate

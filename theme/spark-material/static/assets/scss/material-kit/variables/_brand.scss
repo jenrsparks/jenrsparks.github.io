@@ -2,11 +2,17 @@
 
 /*     brand Colors              */
 
-$primary:              #D87700;
-$primary-fade:         #;
-$info:                 #24232E;
-$success:              $green-500 !default;
-$warning:              $orange-500 !default;
-$danger:               $red-500 !default;
+// -- Default values:
+//$success:              $green-500 !default;
+//$warning:              $orange-500 !default;
+//$danger:               $red-500 !default;
+//$inverse:              $black-color !default;
+
+$primary:              $cm-primary;
+$primary-fade:         #d9a067; // variation of copper from colorHexa
+$info:                 $cm-dark;
+$success:              $cm-success;
+$warning:              $cm-warn;
+$danger:               $cm-danger;
 $rose:                 $pink-500 !default;
-$inverse:              $black-color !default;
+$inverse:              $cm-light;

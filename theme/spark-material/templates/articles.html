@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% for article in articles | sort(reverse=true, attribute="date") %}
+    <div class="card card-plain">
+      <div class="card-body">
+        <h4 class="card-title"><a href="{{ SITEURL }}/{{article.url}}">{{ article.title }}</a></h4>
+        <div class="card-subtitle" style="font-style: italic">Posted in <a href="{{ SITEURL }}/{{article.category.page_name}}.html">{{ article.category }}</a> on {{ article.locale_date }}</div>
+        <div class="card-description">{{ article.summary }}</div>
+        <div class="float-left"><a href="{{ SITEURL }}/{{article.url}}">Read <i class="material-icons">auto_stories</i></a></div>
+      </div>
+    </div>
+  {% endfor %}
+
+{% endblock content %}

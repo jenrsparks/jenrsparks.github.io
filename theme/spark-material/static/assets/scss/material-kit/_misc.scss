@@ -1,6 +1,6 @@
 body{
-    background-color: #eee;
-    color: $black-color;
+    background-color: $body-bg;
+//    color: $black-color;
     font-weight: 300;
 }
 
@@ -25,13 +25,13 @@ a{
   color: $link-color;
   &:hover,
   &:focus{
-      color: darken($link-color, 5%);
+      color: lighten($link-color, 5%);
       text-decoration: none;
   }
 
   &.text-info{
       &:hover, &:focus{
-          color: darken($info, 5%);
+          color: lighten($info, 5%);
       }
   }
 
@@ -41,9 +41,10 @@ a{
 }
 
 .main{
-    background: $white-color;
+    background: $cm-light;
     position: relative;
     z-index: 3;
+    min-height: 55vh;
 }
 
 .form-check,
@@ -55,7 +56,8 @@ label{
 }
 
 .main-raised{
-    margin: -60px 30px 0px;
+    margin: -15vh 30px 0px;
+    padding: 0px 30px;
     border-radius: $border-radius-base * 2;
     @include shadow-16dp();
 }
@@ -535,4 +537,30 @@ label{
       margin-bottom: 10px;
     }
   }
+}
+
+//---- Background classes
+
+.bg-primary {
+  background-color: $cm-primary;
+}
+
+.bg-secondary {
+  background-color: $cm-secondary;
+}
+
+.bg-light {
+  background-color: $cm-light;
+}
+
+.bg-accentl {
+  background-color: $cm-accentl;
+}
+
+.bg-accentd {
+  background-color: $cm-accentd;
+}
+
+.bg-dark {
+  background-color: $cm-dark;
 }

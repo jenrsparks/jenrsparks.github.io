@@ -12,8 +12,8 @@
       position: absolute;
       background-size: cover;
       background-position: center center;
-      width: 100%;
-      height: 100%;
+      width: 35%;
+      height: 35%;
       z-index: -1;
     }
 
@@ -46,8 +46,8 @@
     }
 
     &.header-small {
-        height: 65vh;
-        min-height: 65vh;
+        height: 45vh;
+        min-height: 45vh;
     }
 
     .iframe-container {

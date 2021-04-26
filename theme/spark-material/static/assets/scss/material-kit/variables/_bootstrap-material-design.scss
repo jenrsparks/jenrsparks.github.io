@@ -67,7 +67,7 @@ $padding-default-vertical:     10px !default;
 $medium-pale-bg:             #F1EAE0 !default;
 $pale-bg:                    #F9F7F3 !default;
 
-
+// Move to _type.scss
 $font-color:                 #66615b !default;
 
 $default:     #cecece !default;
@@ -138,13 +138,13 @@ $popover-color: $navbar-color !default;
 $tooltip-font-size: 0.75rem !default;
 
 // Background colors
-$bg-primary: $primary;
+$bg-primary: $cm-light;
 $bg-danger: $danger;
 $bg-warning: $warning;
 $bg-info: $info;
 $bg-rose: $rose;
 $bg-success: $success;
-$bg-dark: $grey-900;
+$bg-dark: $cm-dark;
 
 //Paddings
 $padding-general-y: 0.625rem !default;

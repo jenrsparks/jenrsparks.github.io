@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+  <h2>{{ article.title }}</h2>
+  <i>From {{ article.category }} on {{ article.locale_date }}</i>
+
+  <div>
+    {{ article.content }}
+  </div>
+
+{% endblock content %}
