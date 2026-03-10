@@ -53,7 +53,7 @@ Leaning on the [Cocktail Codex](https://app.thestorygraph.com/books/4d477c60-4b1
 
 ## The Collection
 
-The below graph will take you to any of the recipes directly, as well ase show you the relationships across them. Go explore!
+The below graph will take you to any of the recipes directly, as well as show you the relationships across them. Go explore!
 
 {% capture category_value %}{{ page.category }}{% endcapture %}
 {% include notes_graph.html category=category_value center_note='Core Template' height_modifier=0.7 %}
@@ -64,8 +64,7 @@ The below graph will take you to any of the recipes directly, as well ase show y
 <ul>
 {% for note in notes %}
 {% if note.placeholder == true %}
-<li><a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">
-                {{ note.title }}</a></li>
+<li><a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ note.title }}</a></li>
 {% endif %}
 {% endfor %}
 </ul>

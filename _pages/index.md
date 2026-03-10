@@ -10,7 +10,7 @@ permalink: /
 Somehow, you have stumbled upon a weird mess of random content by yours truly. As content progresses, there will be more variety, but for the time being, check out the couple collections on the navigation along the side.
 
 <div>
-<strong>Recently updated notes</strong>
+<strong>Recently updated</strong>
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
   {% for note in recent_notes limit: 5 %}
