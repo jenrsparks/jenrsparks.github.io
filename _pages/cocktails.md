@@ -24,30 +24,30 @@ Leaning on the [Cocktail Codex](https://app.thestorygraph.com/books/4d477c60-4b1
 
 ### [[Flip|The Flip]]
 
-- **Defining characteristics:** Sweetener \| Spice \| Egg \| Sherry
-- **Tasting notes:** _TBD_
+- **Defining characteristics:** Spice \| Egg \| Sherry
+- **Tasting notes:** Rich, creamy / velvety, sweet, with a dense frothy head
 - **Personal notes:** As someone who can't have egg, I miss out on a lot of the mouthfeel on this one, except for the one whiskey sour I got in Dublin where the bartender just _made it happen_ by, and I quote, "shaking the fuck out of it."
 
 ### [[Gin Martini|The Gin Martini]]
 
 - **Defining characteristics:** Vermouth \| Bitter \| Gin
-- **Tasting notes:** Bitter, smooth, slick/oily mouthfeel
+- **Tasting notes:** Bitter, smooth, slick/oily mouthfeel, herbal
 - **Personal notes:** I must confess, I don't have much love of gin, so the traditional martini gets away from me knowledge-wise.
 
 ### [[Old Fashioned|The Old Fashioned]]
 
 - **Defining characteristics:** Sweetener \| Bitters \| Bourbon
-- **Tasting notes:** Sweet, boozy, carmel-like stickiness
+- **Tasting notes:** Sweet, spirit-forward, carmel-like stickiness
 
 ### [[Sidecar|The Sidecar]]
 
 - Defining characteristics: Sweetener \| Lemon Juice \| Curaçao \| Cognac
-- **Tasting notes:** _TBD_
+- **Tasting notes:** Tart / sour, dry, oaky, citrus
 
 ### [[Whiskey Highball|The Whiskey Highball]]
 
 - **Defining characteristics:** Seltzer \| Whiskey
-- **Tasting notes:** _TBD_
+- **Tasting notes:** Spirit-forward, crisp, effervescent
 
 ---
 
