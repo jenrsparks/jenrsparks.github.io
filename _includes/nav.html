@@ -1,11 +1,11 @@
-<div>
-    <a class="internal-link" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
+<div class="site-header">
+    <a class="internal-link site-title" href="{{ site.baseurl }}/"><b>{{ site.title }}</b><span class="gauge-icon"></span></a>
     {% for static_file in site.static_files %}
         {% if static_file.path == page.category %}
             {% assign categoryFound = true %}
         {% endif %}
     {% endfor %}
     {% if page.category && categoryFound || page.id == page.category %}
-       > <a class="internal-link" href="{{ site.baseurl }}/{{ page.category }}"><b>{{ page.category }}</b></a>
+       <span style="display: block;"><a class="internal-link" href="{{ site.baseurl }}/{{ page.category }}"><b>{{ page.category }}</b></a></span>
     {% endif %}
 </div>

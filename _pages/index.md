@@ -5,9 +5,7 @@ id: home
 permalink: /
 ---
 
-## Welcome!
-
-Somehow, you have stumbled upon a weird mess of random content by yours truly. For a sampling of the silly and often weird projects I've done, check out the couple collections on the navigation along the side.
+__Welcome!__ Somehow, you have stumbled upon a weird mess of random content by yours truly. For a sampling of the silly and often weird projects I've done, check out the couple collections on the navigation along the side.
 
 ### But wait, who am I?
 

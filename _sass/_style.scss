@@ -118,7 +118,7 @@ a {
 }
 
 nav {
-  margin: 1em 0 3em;
+  margin: 2em 0 1em;
 }
 
 #notes-entry-container {
@@ -241,5 +241,74 @@ code {
     &:hover {
       border-bottom-color: $color-primary-complement;
     }
+  }
+}
+
+/* Title */
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: sans-serif;
+  /* Use your site's font */
+  font-weight: 800;
+  font-size: 2rem;
+  color: $color-text;
+  text-decoration: none;
+  line-height: 0.8;
+
+  &:hover {
+    .gauge-icon::after {
+      /* Swings the needle to the 'max' position on the right */
+      transform: rotate(80deg);
+    }
+  }
+}
+
+.gauge-icon {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  /* Width of the gauge */
+  height: 20px;
+  /* Half height for the semi-circle */
+  border: 2px solid $color-border;
+  border-bottom: none;
+  border-radius: 40px 40px 0 0;
+  margin-top: 4px;
+  /* Manual nudge to align with text baseline */
+
+  /* The Needle */
+  &::after {
+    content: '';
+    position: absolute;
+    /* Centers needle: (Gauge Width 40px / 2) - (Needle Width 2px / 2) = 19px */
+    left: 19px;
+    bottom: 0;
+    width: 2px;
+    height: 19px;
+    background-color: $color-primary-complement;
+
+    /* Pivot from the bottom center of the needle */
+    transform-origin: bottom center;
+
+    /* Starting position away from the title (pointing left) */
+    transform: rotate(-30deg);
+
+    /* The "Mechanical" feel transition */
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  /* Optional: The Center Pin Dot */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 17px;
+    bottom: -3px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    z-index: 3;
   }
 }
