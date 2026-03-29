@@ -10,18 +10,29 @@ use_html_extension:  false
 
 # Set to `true` to open non-internal links in new tabs, or
 # set to `false` to open non-internal links in current tab.
-open_external_links_in_new_tab: true
+open_external_links_in_new_tab: false
 
 # Set to `true` to replace tweet URLs with Twitter embeds.
 # Note that doing so will negatively the reader's privacy
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
 
-permalink:           pretty
+permalink: pretty
 relative_permalinks: false
 
 plugins:
   - jekyll-last-modified-at
+  - jekyll-node-module
+
+
+node_modules:
+  modules_dir: node_modules
+  assets:
+    js: assets/scripts
+    css: assets/styles
+  copy:
+  - source: "fslightbox/"
+    target: assets/scripts/fslightbox/
 
 sass:
   sass_dir:          _sass
@@ -51,3 +62,13 @@ defaults:
     values:
       layout: "page"
       category: Cocktails
+  # Set up types for photos to be able to display as groups
+  - scope:
+      path: "assets/images/photography/digital-*"
+    values:
+      photo_type: "digital"
+  - scope:
+      path: "assets/images/photography/film-*"
+    values:
+      photo_type: "film"
+

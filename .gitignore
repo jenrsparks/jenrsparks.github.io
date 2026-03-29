@@ -14,4 +14,7 @@ _includes/notes_graph.json
 # Obsidian config
 .obsidian/
 
+# node_modules & related
+node_modules/
+
 .DS_Store
