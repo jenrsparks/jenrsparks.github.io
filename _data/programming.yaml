@@ -1,0 +1,5 @@
+- name: The Spells of D&D 5e
+  date: Sept 2019
+  description: |
+    A derivitive of [dukeflipchart](http://github.com/dukeflipchart)'s react app and [u/Zolo49's spell spreadsheet](https://www.reddit.com/r/DnD/comments/2qs89e/5e_spell_reference_sheets_are_done/), this implementation adds level filtering plus the spells from Xanathar's Guide to Everything (XGE).
+  url: https://jenrsparks.github.io/dndspells

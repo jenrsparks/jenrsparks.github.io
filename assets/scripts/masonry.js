@@ -21,9 +21,8 @@ function resizeAllMasonryItems() {
     const allItems = document.querySelectorAll('.masonry-item');
     allItems.forEach(item => {
         const img = item.querySelector('img');
-
-        // If image is already in cache/loaded
-        if (img.complete) {
+        // If image is already in cache/loaded or there is no image, we can resize immediately
+        if (img == null || img.complete) {
             resizeMasonryItem(item);
         } else {
             // Wait for it to load to get the real height

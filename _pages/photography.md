@@ -23,7 +23,7 @@ Not all of them are particularly good, but that's why we take a lot. Below, you'
 
 ## {{ type | capitalize }} Photographs
 &nbsp;
-<div class="masonry-grid">
+<div class="four-column masonry-grid">
   {% for photo in photos %}
   {% assign date = photo.basename | split: '_' | first | replace: '-xx-xx', '' | replace: '-', '/' %}
   {% assign lowerwords = 'in,on,the,a,and,at,of,or' | split: ',' %}

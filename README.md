@@ -1,4 +1,4 @@
-# Jen Sparks : Digital Garden
+# Jen Sparks //
 
 This is my own version of a digital garden, forked from the [digital-garden-jekyll-template](https://github.com/maximevaillancourt/digital-garden-jekyll-template). Really, it's more a projects and landing space, but I enjoy some of the quality of life factors found within the digital garden paradigm, so it was a good a starting point as any.
 
