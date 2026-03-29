@@ -45,12 +45,12 @@ Not all of them are particularly good, but that's why we take a lot. Below, you'
   {% assign title = title | strip | split: ' ' | join: ' ' %}
 
   <div class="masonry-item">
-    <!-- <a class="internal-link" data-fslightbox href="{{ site.baseurl }}{{ photo.path }}" data-alt="{{ date }}: {{ title }}" data-type="image" > -->
+    <a class="internal-link" data-fslightbox href="{{ site.baseurl }}{{ photo.path }}" data-alt="{{ date }}: {{ title }}" data-type="image" >
       <img src="{{ site.baseurl }}{{ photo.path }}" alt="{{ date }}: {{ title }}" />
       <div class="masonry-label">
           <span class="image-title">{{ date }}: {{ title }}</span>
       </div>
-    <!-- </a> -->
+    </a>
   </div>
 {% endfor %}
 </div>
