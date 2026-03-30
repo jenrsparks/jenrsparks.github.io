@@ -253,14 +253,14 @@ code {
   /* Use your site's font */
   font-weight: 800;
   font-size: 2rem;
-  color: $color-text;
+  color: $color-primary;
   text-decoration: none;
   line-height: 0.8;
 
   &:hover {
     .gauge-icon::after {
       /* Swings the needle to the 'max' position on the right */
-      transform: rotate(80deg);
+      transform: rotate(65deg);
     }
   }
 }

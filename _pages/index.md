@@ -5,7 +5,9 @@ id: home
 permalink: /
 ---
 
-__Welcome!__ Somehow, you have stumbled upon a weird mess of random content by yours truly. For a sampling of the silly and often weird projects I've done, check out the couple collections on the navigation along the side.
+## Welcome!
+
+Somehow, you have stumbled upon a weird mess of random content by yours truly. For a sampling of the somtimes silly and often weird projects I've done, check out the couple collections on the navigation along the side.
 
 ### But wait, who am I?
 
@@ -16,13 +18,3 @@ On a personal front, I'm a maker through and through. My media ranges across cro
 ### What's with the name?
 
 If you aren't familiar with crochet or knitting, tension is how tight your work is, and gauge is a number of stitches for a specific size. There's some play on themes here, however, as gauges are also common visualizations on observability dashboards. (Check the title of the site if you aren't sure what I mean by the latter.) To add a third meaning to it, there is, of course, the tension caused by the stress of the day to day. Optimally, this place is hopefully free of the majority of that.
-
-## Recent Updates
-<ul>
-  {% assign recent_everything = site.notes | concat: site.pages | sort: "last_modified_at_timestamp" | reverse | slice: 0, 5 %}
-  {% for item in recent_everything %}
-    <li>
-      <a class="internal-link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
