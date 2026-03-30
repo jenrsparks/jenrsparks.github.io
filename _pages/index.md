@@ -13,12 +13,16 @@ Professionally, that's a bit hard to answer; I've been a software developer, an 
 
 On a personal front, I'm a maker through and through. My media ranges across crochet, cross stitch, 3d printing, photography, baking, graphic design, and many others. I'm also a parent, a partner, a daughter, and a friend to many. When I'm _not_ making something, relaxation comes in the form of movies, books, and especially video games. 
 
-## Recently updated
+### What's with the name?
+
+If you aren't familiar with crochet or knitting, tension is how tight your work is, and gauge is a number of stitches for a specific size. There's some play on themes here, however, as gauges are also common visualizations on observability dashboards. (Check the title of the site if you aren't sure what I mean by the latter.) To add a third meaning to it, there is, of course, the tension caused by the stress of the day to day. Optimally, this place is hopefully free of the majority of that.
+
+## Recent Updates
 <ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
+  {% assign recent_everything = site.notes | concat: site.pages | sort: "last_modified_at_timestamp" | reverse | slice: 0, 5 %}
+  {% for item in recent_everything %}
     <li>
-      <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      <a class="internal-link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
     </li>
   {% endfor %}
 </ul>

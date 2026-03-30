@@ -5,7 +5,9 @@
             {% assign categoryFound = true %}
         {% endif %}
     {% endfor %}
-    {% if page.category && categoryFound || page.id == page.category %}
-       <span style="display: block;"><a class="internal-link" href="{{ site.baseurl }}/{{ page.category }}"><b>{{ page.category }}</b></a></span>
+    {% if page.category and (page.id != page.category) %}
+       <span style="font-style:oblique; font-weight: lighter; display: block; color: gray;">
+        Where am I? Oh yeah, this is a page under <a class="internal-link" href="{{ site.baseurl }}/{{ page.category }}">{{ page.category | downcase }}</a>.
+        </span>
     {% endif %}
 </div>
