@@ -1,4 +1,4 @@
-/**
+<!--
   * This is a template for a single masonry card. It displays the name, date, description, and a link.
   * Parameters:
   * - title
@@ -7,19 +7,21 @@
   * - image
   * - url
   * - link_text
-**/
+-->
 <div class="masonry-item">
     <div class="custom-card">
         <div class="custom-card__header">
-            <h3 class="custom-card__title">{{ include.title }}</h3>
+            <h3 class="custom-card__title">{{ include.title | default: "Untitled" }}</h3>
+            {% if include.date %}
             <span class="custom-card__date">{{ include.date }}</span>
+            {% endif %}
         </div>
         {% if include.description %}
             <p class="custom-card__description">{{ include.description | markdownify }}</p>
         {% endif %}
         {% if include.image %}
-            <img src="{{ include.image }}" alt="{{ include.title }}" class="custom-card__image">
+            <img src="{{ include.image }}" alt="{{ include.title | default: '' }}" class="custom-card__image">
         {% endif %}
-        <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "View" }}</a>
+        <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
     </div>
 </div>

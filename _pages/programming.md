@@ -14,15 +14,11 @@ navigation_include: true
 
 <div class="two-column masonry-grid">
 {% for project in site.data.programming %}
-    <div class="masonry-item">
-        <div class="custom-card"> 
-            <div class="custom-card__header">
-                <h3 class="custom-card__title">{{ project.name | markdownify }}</h3>
-                <span class="custom-card__date">{{ project.date }}</span>
-            </div>
-            <p class="custom-card__description">{{ project.description | markdownify }}</p>    
-            <a href="{{ project.url }}" class="custom-card__link">View Project</a>
-        </div>
-    </div>
+    {% include masonry-card.html 
+        title=project.name 
+        date=project.date
+        description=project.description
+        url=project.url
+        link_text='View Project' %}
 {% endfor %}
 </div>
