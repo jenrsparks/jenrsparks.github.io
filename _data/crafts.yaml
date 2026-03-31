@@ -1,8 +1,70 @@
 - category: Crochet
   entries:
+    - name: Mosaics (Pillow)
+      completed: 2024/10/26
+      description: A pillow made from the same material as the Girasole blanket, plus white and brown. One side is a reverse of the other to hopefully enable a bit more versatility in styling. Of course, we changed to a _gray_ couch shortly thereafter, at which point it all clashed.
+      image: assets/images/crafts/crochet/mosaics-pillow.jpg
+      link: https://www.ravelry.com/projects/jrsparks/mosaics
+    - name: Hubble the Squid
+      completed: 2020/08/20
+      description: Made in a day, this popular little guy was a quick one made from a hand-me-down project leftover from my MIL. I gave him slightly more realistic tentacles in hopes of personalizing him a smidge.
+      image: assets/images/crafts/crochet/hubble-the-squid.jpg
+      link: https://www.ravelry.com/projects/jrsparks/hubble-the-squid
     - name: Big Cable Baby Blanket
-      started: 2024/03/16
       completed: 2024/10/26
       description: A blanket made for little Bennett, my neice.
-      image: assets/images/crafts/crochet/baby-blanket.jpg
+      image: assets/images/crafts/crochet/big-cable-baby-blanket.jpg
       link: https://www.ravelry.com/projects/jrsparks/big-cable
+    - name: Harvest Hands
+      completed: 2018/09/01
+      description: A pair of fingerless gloves made with a variegated sock-weight merino wool yarn.
+      image: assets/images/crafts/crochet/harvest-hands.jpg
+      link: https://www.ravelry.com/projects/jrsparks/harvest-hands
+    - name: Fetching (Gloves)
+      completed: unknown
+      description: My first (remembered) completed crochet project, made with Red Heart Super Saver yarn in bright orange.
+      image: assets/images/crafts/crochet/fetching-gloves.jpg
+      link: https://www.ravelry.com/projects/jrsparks/fetching
+- category: Cross Stitch
+  entries:
+    - name: Kuzko's Poison
+      completed: 2026/01/05
+      description: A cross stitch of Kuzko's poison from The Emperor's New Groove, made for a friend who loves the movie. Pattern modified for a bit more flash, and an over-the-top frame added for good measure.
+      image: assets/images/crafts/cross-stitch/kuzkos-poison.jpg
+    - name: Spiderweb
+      completed: 2025/11/01
+      description: A simple spider in a web, made for Halloween. Fabric was hand-dyed by me.
+      image: assets/images/crafts/cross-stitch/spiderweb.jpg
+    - name: Fox in Leaves
+      completed: 2025/10/18
+      description: An oft-duplicated pattern of a fox making up trees and leaves. Forgive the blue dots; it's still yet to be washed, framed, and hung on the wall.
+      image: assets/images/crafts/cross-stitch/fox-in-leaves.jpg
+    - name: Celeste Sunset
+      completed: 2022/08/27
+      description: A cross stitch donated to Flame Fatales '22' as a raffle prize.
+      image: assets/images/crafts/cross-stitch/celeste-sunset.jpg
+    - name: Raccoons
+      completed: 2022/08/14
+      description: A tryptich of raccoons, made as a gift for my friend with a particular love of trash pandas.
+      image: assets/images/crafts/cross-stitch/raccoons.jpg
+    - name: Hylean Crest
+      completed: 2022/06/15
+      description: A cross stitch of the Hylean Crest from The Legend of Zelda. 
+      image: assets/images/crafts/cross-stitch/hylean-crest.jpg
+- category: Knitting
+  entries:
+    - name: Ziyal
+      completed: 2014/11/23
+      description: Yes, those colors are accurate. No, I'm not brave enough to wear it. 😂 After nearly a decade sitting in a drawer, it was donated for some other brave soul to hopefully give it a good home.
+      image: assets/images/crafts/knitting/ziyal.jpg
+      link: https://www.ravelry.com/projects/jrsparks/ziyal
+    - name: Girasole
+      completed: 2012/07//14
+      description: Originally intended as a shawl, I used much too big yarn in acrylic and instead got myself a lacey blanket. This one has been around a long time and gets love on sick days even now.
+      image: assets/images/crafts/knitting/girasole.jpg
+      link: https://www.ravelry.com/projects/jrsparks/girasole
+    - name: Spirogyra
+      completed: 2011/11/14
+      description: Lightweight fingerless gloves in an acryic / wool blend yarn. The pattern name always reminds me of my grandfather, who was a huge fan of the British band of the same name.
+      image: assets/images/crafts/knitting/spirogyra.jpg
+      link: https://www.ravelry.com/projects/jrsparks/spirogyra
