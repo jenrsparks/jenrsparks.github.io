@@ -13,7 +13,7 @@
         <div class="custom-card__header">
             <h3 class="custom-card__title">{{ include.title | default: "Untitled" }}</h3>
             {% if include.date %}
-            <span class="custom-card__date">{{ include.date }}</span>
+                <span class="custom-card__date">{{ include.date }}</span>
             {% endif %}
         </div>
         {% if include.description %}
@@ -22,6 +22,8 @@
         {% if include.image %}
             <img src="{{ include.image }}" alt="{{ include.title | default: '' }}" class="custom-card__image">
         {% endif %}
-        <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
+        {% if include.url %}
+            <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
+        {% endif %}
     </div>
 </div>

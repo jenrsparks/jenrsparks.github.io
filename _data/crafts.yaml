@@ -41,7 +41,7 @@
       image: assets/images/crafts/cross-stitch/fox-in-leaves.jpg
     - name: Celeste Sunset
       completed: 2022/08/27
-      description: A cross stitch donated to Flame Fatales '22' as a raffle prize.
+      description: A cross stitch donated to Flame Fatales '22 as a raffle prize.
       image: assets/images/crafts/cross-stitch/celeste-sunset.jpg
     - name: Raccoons
       completed: 2022/08/14
@@ -49,7 +49,7 @@
       image: assets/images/crafts/cross-stitch/raccoons.jpg
     - name: Hylean Crest
       completed: 2022/06/15
-      description: A cross stitch of the Hylean Crest from The Legend of Zelda. 
+      description: A cross stitch of the Hylean Crest from The Legend of Zelda. Shown on the right is in progress with the various floss spread out, better conveying the range of colors used.
       image: assets/images/crafts/cross-stitch/hylean-crest.jpg
 - category: Knitting
   entries:
@@ -65,6 +65,6 @@
       link: https://www.ravelry.com/projects/jrsparks/girasole
     - name: Spirogyra
       completed: 2011/11/14
-      description: Lightweight fingerless gloves in an acryic / wool blend yarn. The pattern name always reminds me of my grandfather, who was a huge fan of the British band of the same name.
+      description: Lightweight fingerless gloves in an acryic / wool blend yarn. The pattern name always reminds me of my grandfather, who was a big fan of the British band of the same name.
       image: assets/images/crafts/knitting/spirogyra.jpg
       link: https://www.ravelry.com/projects/jrsparks/spirogyra
