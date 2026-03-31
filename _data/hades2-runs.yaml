@@ -1,0 +1,151 @@
+- night: 44
+  run_type: below
+  tagline: dynamic duos
+  duration: 25:36.56
+  result: prevailed
+  weapon: 
+    base: wand
+    aspect: circe
+  familiar: toula
+  keepsakes:
+    - vivid sea
+    - fig leaf
+    - ghost onion
+    - knuckle bones
+  boons:
+    - ice strike
+    - heaven flourish
+    - tidal ring
+    - frigid rush
+    - glamour gain
+    - dual moonshot
+    - cross cataclysm
+    - static shock
+    - arctic gale
+    - cold storage
+    - broken resolve
+    - wispy wiles
+    - stutter step
+    - quick buck
+    - deep dissent
+    - evade evade evade
+    - discovery
+    - hail storm
+    - killer current
+    - hearty appetite
+  cards:
+    - the wayward son
+    - the huntress
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - night
+    - the swift runner
+    - death
+    - the centaur
+    - the lovers
+    - the enchantress
+    - the boatman
+    - the fates
+    - the champions
+    - divinity
+  vows:
+- night: 43
+  run_type: chaos
+  tagline: trial of slaughter
+  duration: 08:24.86
+  result: cleared
+  weapon: 
+    base: axe
+    aspect: moonstone?
+  familiar: 
+  keepsakes:
+    - sword hilt
+  boons:
+    - viscious strike
+    - vicious flourish
+    - sword ring
+    - grisly gain
+    - giga cleaver
+    - profuse bleeding
+    - grievous blow
+    - visceral impact
+    - mutual distruction
+    - cut above
+    - rallying cry
+    - nimble limbs
+    - plasma
+    - sanguinary savor
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - persistence
+    - the messenger
+    - the unseen
+    - night
+    - the centaur
+    - the champions
+    - strength
+    - divinity
+- night: 42
+  run_type: below
+  tagline: 
+  duration: 25:12.31
+  result: prevailed
+  weapon: 
+    base: coat
+    aspect: selene
+  familiar: toula
+  keepsakes:
+    - sword hilt
+    - beautiful mirror
+    - expirimental hammer
+    - knuckle bones
+  boons:
+    - vicious strike
+    - vicious flourish
+    - smoulder ring
+    - glamour gain
+    - sky fall
+    - brilliance
+    - omen
+    - sting
+    - reaper frame
+    - world collider
+    - launcher frame
+    - extended family
+    - steady growth
+    - broken resolve
+    - sweet surrender
+    - flash fry
+    - slow cooker
+    - grievous blow
+    - death warrant
+    - hasty retreat
+    - old grudge
+    - fates' trimmings
+    - soul
+    - burning desire
+  cards:
+    - the wayward son
+    - the huntress
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - night
+    - the swift runner
+    - death
+    - the centaur
+    - the lovers
+    - the enchantress
+    - the boatman
+    - the fates
+    - the champions
+    - divinity
+  vows:
+    - vow of hubris: 2
