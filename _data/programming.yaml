@@ -3,3 +3,8 @@
   description: |
     A derivitive of [dukeflipchart](http://github.com/dukeflipchart)'s react app and [u/Zolo49's spell spreadsheet](https://www.reddit.com/r/DnD/comments/2qs89e/5e_spell_reference_sheets_are_done/), this implementation adds level filtering plus the spells from Xanathar's Guide to Everything (XGE).
   url: https://jenrsparks.github.io/dndspells
+- name: Hades 2 Analytics
+  date: TBD
+  description: |
+    I've played enough Hades 2, it's time to start mining that data for what pretty visualizations I can make. This project is a work in progress, but the goal is to have a dashboard that shows my progress through the game, including things like which weapons I've used the most, which boons I've gotten, and win rates and approach vary over time.
+  link_text: Project Link Coming Soon™️

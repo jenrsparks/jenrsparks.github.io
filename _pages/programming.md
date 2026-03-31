@@ -14,11 +14,16 @@ navigation_include: true
 
 <div class="two-column masonry-grid">
 {% for project in site.data.programming %}
+    {% assign link_text = "View Project" %}
+    {%- if project.link_text -%}
+        {%- assign link_text = project.link_text -%}
+    {%- endif -%}
+
     {% include masonry-card.html 
         title=project.name 
         date=project.date
         description=project.description
         url=project.url
-        link_text='View Project' %}
+        link_text=link_text %}
 {% endfor %}
 </div>

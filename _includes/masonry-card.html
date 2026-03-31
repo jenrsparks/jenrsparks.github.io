@@ -24,6 +24,8 @@
         {% endif %}
         {% if include.url %}
             <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
+        {% elsif include.link_text %}
+            <span class="custom-card__link">{{ include.link_text }}</span>
         {% endif %}
     </div>
 </div>
