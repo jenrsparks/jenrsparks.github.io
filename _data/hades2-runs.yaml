@@ -1,8 +1,32 @@
+# - night: 
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     killed_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
 - night: 44
   run_type: below
   tagline: dynamic duos
   duration: 25:36.56
-  result: prevailed
+  result: 
+    status: Prevailed
+    killed_by: 
+    killed_in: 
   weapon: 
     base: wand
     aspect: circe
@@ -55,7 +79,10 @@
   run_type: chaos
   tagline: trial of slaughter
   duration: 08:24.86
-  result: cleared
+  result: 
+    status: Cleared
+    killed_by: 
+    killed_in: 
   weapon: 
     base: axe
     aspect: moonstone?
@@ -91,11 +118,15 @@
     - the champions
     - strength
     - divinity
+
 - night: 42
   run_type: below
   tagline: 
   duration: 25:12.31
-  result: prevailed
+  result: 
+    status: Prevailed
+    killed_by: 
+    killed_in: 
   weapon: 
     base: coat
     aspect: selene
@@ -149,3 +180,1311 @@
     - divinity
   vows:
     - vow of hubris: 2
+
+- night: 41
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 40
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+
+- night: 39
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 38
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 37
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 36
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+
+- night: 35
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 34
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 33
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 32
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 31
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 30
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 29
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 28
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 27
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 26
+  run_type: 
+  tagline: 
+  duration: 
+  result: 
+    status: 
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: 
+    aspect: 
+  familiar: 
+  keepsakes:
+    - 
+  boons:
+    - 
+  cards:
+    -
+  vows:
+    - 
+
+- night: 25
+  run_type: above
+  tagline: Surface Scourer
+  duration: 38:01.63
+  result: 
+    status: Prevailed
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: Sister Blades
+  familiar: Gale
+  keepsakes:
+    - experimental hammer
+    - concave stone
+    - silken sash
+    - barley sheaf
+  boons:
+    - ice strike
+    - wave flourish
+    - arctic ring
+    - blinding rush
+    - lucid gain
+    - night bloom
+    - devotion
+    - purpose
+    - growth
+    - reaper knives
+    - wicked onslaught
+    - word of greater girth
+    - ingenious strike
+    - high surf
+    - arctic gale
+    - snow queen
+    - cold storage
+    - light smite
+    - back burner
+    - super nova
+    - molten touch
+    - heavy metal
+    - trusty shield
+    - martial art
+    - defensive posture
+    - nimble limbs
+    - hasty retreat
+    - beach ball
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the enchantress
+    - the boatman
+    - divinity
+
+- night: 24
+  run_type: above
+  tagline: 
+  duration: 38:17.37
+  result: 
+    status: Failed
+    killed_by: Tail of Typhon
+    killed_in: The Summit
+  weapon: 
+    base: Moonstone Axe
+  familiar: Toula
+  keepsakes:
+    - Barley Sheaf
+    - Silken Sash
+    - Luckier Tooth
+  boons:
+    - ice strike
+    - heaven flourish
+    - solar ring
+    - thunder rush
+    - ionic gain
+    - twilight curse
+    - purpose
+    - growth
+    - exposure
+    - humility
+    - infection
+    - furious whirlwind
+    - melting shredder
+    - black night banishment
+    - suffering on sight
+    - static shock
+    - arctic gale
+    - cold storage
+    - prominence flare
+    - super nova
+    - heavy metal
+    - trusty shield
+    - renewed faith
+    - winner's circle
+    - hail storm
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the enchantress
+    - the boatman
+    - divinity
+  vows:
+    - Vow of Wards: 1
+
+- night: 23
+  run_type: chaos
+  tagline: trial of humility
+  duration: 7:28.73
+  result: 
+    status: cleared
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: witch's staff
+  keepsakes:
+    - experimental hammer
+  boons:
+    - nova strike
+    - smoulder ring
+    - frigid rush
+    - rapid thrasher
+    - divine vengence
+    - extra dose
+
+- night: 22
+  run_type: above 
+  tagline: 
+  duration: 28:14.96
+  result: 
+    status: failed
+    killed_by: Spawn of Typhon
+    killed_in: The Summit
+  weapon: 
+    base: Black Coat
+  familiar: Raki
+  keepsakes:
+    - transcendent embryo
+    - luckier tooth
+  boons:
+    - volcanic strike
+    - volcanic flourish
+    - rapture ring
+    - frigid rush
+    - glamour gain
+    - twilight curse
+    - purpose
+    - humility
+    - spread
+    - ambition
+    - siege frame
+    - word of smaller stature
+    - corrosion on sight
+    - ingenious flourish
+    - hydraulic might
+    - arctic gale
+    - steady growth
+    - spiritual affirmation
+    - nitro boost
+    - stutter step
+    - talent
+    - hearty appetite
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the enchantress
+    - the boatman
+    - divinity
+
+- night: 21
+  run_type: chaos
+  tagline: trial of salt
+  duration: 4:35.34
+  result: 
+    status: cleared
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: sister blades
+  keepsakes:
+    - transcendent embryo
+  boons:
+    - wave strike
+    - wave flourish
+    - tidal ring
+    - breaker rush
+    - flood gain
+    - hidden knives
+    - hydraulic might
+    - sea star
+    - slippery slope
+    - water fitness
+    - mind
+    - king tide
+  cards:
+    - the sorceress
+    - the wayward son
+    - the furies
+    - persistence
+    - death
+
+- night: 20
+  run_type: chaos
+  tagline: trial of origin
+  duration: 7:55.76
+  result: 
+    status: cleared
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: witch's staff
+  familiar: 
+  keepsakes:
+    - ghost onion
+  boons:
+    - heaven strike
+    - flame flourish
+    - tidal ring
+    - passion rush
+    - vampiric cataclysm
+    - power surge
+    - broken resolve
+    - nimble limbs
+    - chasm
+    - will
+    - excrutiating
+  cards:
+    - the sorceress
+
+- night: 19
+  run_type: below
+  tagline: 
+  duration: 32:33.67
+  result: 
+    status: Failed
+    killed_by: Chronos
+    killed_in: Tartarus
+  weapon: 
+    base: Staff
+    aspect: Circe
+  familiar: Raki
+  keepsakes:
+    - luckier tooth
+    - ghost onion
+  boons:
+    - ice strike
+    - sworn flourish
+    - engagement ring
+    - frigid rush
+    - tranquil gain
+    - moon water
+    - giga moonburst
+    - weed killer
+    - cold storage
+    - super nova
+    - extra dose
+    - molten touch
+    - heavy metal
+    - trusty shield
+    - easy shot
+    - mean streak
+    - last gasp
+    - verdure sampler
+    - evade evade evade
+    - strike
+    - chasm
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the enchantress
+    - the boatman
+    - divinity
+
+- night: 18
+  run_type: above
+  tagline: 
+  duration: 25:02.60
+  result: 
+    status: Failed
+    killed_by: Prometheus
+    killed_in: Olympus
+  weapon: 
+    base: Black Coat
+  familiar: Toula
+  keepsakes:
+    - barley sheaf
+    - silken sash
+    - luckier tooth
+  boons:
+    - ice strike
+    - ice flourish
+    - arctic ring
+    - smithy rush
+    - lunar ray
+    - growth
+    - bearing
+    - reaper frame
+    - siege frame
+    - old herbal remedy
+    - ingenious strike
+    - power surge
+    - static shock
+    - electric overload
+    - extended family
+    - molten touch
+    - security system
+    - furnace blast
+    - hasty retreat
+    - quick buck
+    - master conductor
+    - cryo pounder
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 17
+  run_type: above
+  tagline: 
+  duration: 11:28.20
+  result: 
+    status: Failed
+    killed_by: Blasket
+    killed_in: Thessaly
+  weapon: 
+    base: Moonstone Axe
+  familiar: Toula
+  keepsakes:
+    - luckier tooth
+    - silken sash
+  boons:
+    - wave strike
+    - anvil ring
+    - smithy rush
+    - executioner's chop
+    - malice in kind
+    - bridal glow
+    - arctic gale
+    - molten touch
+    - hard target
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 16
+  run_type: above
+  tagline: 
+  duration: 27:42.47
+  result: 
+    status: Failed
+    killed_by: Prometheus
+    killed_in: Olympus
+  weapon: 
+    base: Sister Blades
+  familiar: Raki
+  keepsakes:
+    - transcendent embryo
+    - ghost onion
+    - luckier tooth
+  boons:
+    - flame strike
+    - wave flourish
+    - engagement ring
+    - heat rush
+    - moon water
+    - purity
+    - vigor
+    - fortune
+    - wicked onslaught
+    - extended family
+    - bridal glow
+    - rousing reception
+    - hydraulic might
+    - high surf
+    - slippery slope
+    - snow queen
+    - local climate
+    - flash fry
+    - stalwart stand
+    - stutter step
+    - hasty retreat
+    - favor
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 15
+  run_type: above
+  tagline: 
+  duration: 13:03.98
+  result: 
+    status: failed
+    killed_by: Stickler
+    killed_in: Thessaly
+  weapon: 
+    base: Argent Skull
+  familiar: Raki
+  keepsakes:
+    - transcendent embryo
+  boons:
+    - sworn strike
+    - heaven flourish
+    - solar ring
+    - smithy rush
+    - volatile array
+    - double strike
+    - perfect image
+    - martial art
+    - nimble limbs
+    - revival
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 14
+  run_type: night
+  tagline: 
+  duration: 27:05.14
+  result: 
+    status: prevailed
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: sister blades
+  familiar: Raki
+  keepsakes:
+    - transcendent embryo
+    - evil eye
+  boons:
+    - flame strike
+    - ice flourish
+    - anvil ring
+    - heat rush
+    - cardio gain
+    - total eclipse
+    - melting sickle
+    - skulking onslaught
+    - divine vengeance
+    - plentiful forage
+    - steady growth
+    - cold storage
+    - heavy metal
+    - slow cooker
+    - quick buck
+    - gigaros dash
+    - ancestral offering
+    - evade evade evade
+    - strike
+    - creation
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 13
+  run_type: below
+  tagline: Titan Slayer
+  duration: 27:16.82
+  result: 
+    status: prevailed
+    killed_by: 
+    killed_in: 
+  weapon: 
+    base: witch's staff
+  familiar: frinos
+  keepsakes:
+    - silken sash
+    - evil eye
+  boons:
+    - heaven strike
+    - wave flourish
+    - storm ring
+    - thunder rush
+    - twilight curse
+    - purpose
+    - exposure
+    - humility
+    - spread
+    - wicked thrasher
+    - extending wallop
+    - air quality
+    - hydraulic might
+    - steady growth
+    - heavy metal
+    - trusty shield
+    - marshial art
+    - hard target
+    - deep dissent
+    - evade evade evade
+  cards:
+    - the sorceress
+    - the wayward son
+    - the huntress
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - death
+    - the centaur
+    - the boatman
+
+- night: 12
+  run_type: below
+  tagline: 
+  duration: 24:02.46
+  result: 
+    status: Failed
+    killed_by: Chronos
+    killed_in: Tartarus
+  weapon: 
+    base: Sister Blades
+  familiar: 
+  keepsakes:
+    - transcendent embryo
+    - knuckle bones
+  boons:
+    - nova strike
+    - volcanic flourish
+    - arctic ring
+    - frigid rush
+    - trick knives
+    - arctic gale
+    - dazzling display
+    - self healing
+    - flash fry
+    - snuffed candle
+    - support fire
+    - nimble limbs
+    - hasty retreat
+    - unseen ire
+    - favor
+    - discovery
+    - tropical cyclone
+  cards:
+    - the sorceress
+    - the wayward son
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 11
+  run_type: above
+  tagline: 
+  duration: 1:12.04
+  result: 
+    status: Failed
+    killed_by: ?
+    killed_in: Ephyra
+  weapon: 
+    base: Sister Blades
+  keepsakes:
+    - transcendent embryo
+  boons:
+    - flame strike
+    - moon water
+    - discovery
+    - cthonic fate
+  cards:
+    - the sorceress
+    - the wayward son
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 10
+  run_type: above
+  tagline: 
+  duration: 0:57.56
+  result: 
+    status: Failed
+    killed_by: ?
+    killed_in: Ephyra
+  weapon: 
+    base: Sister Blades
+  keepsakes:
+    - transcendent embryo
+  boons:
+    - heaven strike
+    - revival
+    - chthonic fate
+  cards:
+    - the sorceress
+    - the wayward son
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 9
+  run_type: below
+  tagline: 
+  duration: 8:21.69
+  result: 
+    status: Failed
+    killed_by: King Vermin
+    killed_in: Oceanus
+  weapon: 
+    base: Moonstone Axe
+  keepsakes:
+    - transcendent embryo
+  boons:
+    - flame strike
+    - volcanic flourish
+    - storm ring
+    - heat rush
+    - seething marauder
+    - wispy wiles
+    - uncanny fortitude
+    - nimble limbs
+    - hasty retreat
+    - precious metals
+    - will
+    - addled
+  cards:
+    - the sorceress
+    - the wayward son
+    - eternity
+    - the moon
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+    - the centaur
+    - the boatman
+
+- night: 8
+  run_type: below
+  tagline: 
+  duration: 29:08.49
+  result: 
+    status: Failed
+    killed_by: Goldwrath
+    killed_in: Tartarus
+  weapon: 
+    base: Umbral Flames
+  keepsakes:
+    - Silken Sash
+  boons:
+    - heaven strike
+    - nova flourish
+    - solar ring
+    - smithy rush
+    - glamour gain
+    - wolf howl
+    - mega blaze
+    - leaden blaze
+    - heart breaker
+    - uncanny fortitude
+    - pressure points
+    - nimble limbs
+    - old grudge
+    - mystic secrets
+    - mind
+    - will
+    - '"blessing" of Strife'
+    - Rude Awakening
+  cards:
+    - the sorceress
+    - the wayward son
+    - huntress
+    - eternity
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+
+- night: 7
+  run_type: below
+  tagline: 
+  duration: 16O52.48
+  result: 
+    status: Failed
+    killed_by: Scylla
+    killed_in: Oceanus
+  weapon: 
+    base: Moonstone Axe
+  keepsakes:
+    - Silken Sash
+  boons:
+    - volcanic strike
+    - volcanic flourish
+    - storm ring
+    - frigid rush
+    - glamour gain
+    - siege shredder
+    - arctic gale
+    - heart breaker
+    - hasty retreat
+    - mean streak
+  cards:
+    - the sorceress
+    - the wayward son
+    - huntress
+    - eternity
+    - the furies
+    - persistence
+    - the messenger
+    - the swift runner
+    - death
+
+- night: 6
+  run_type: below
+  tagline:
+  duration: 31:32.50
+  result:
+    status: Failed
+    killed_by: Chronos
+    killed_in: Tartarus
+  weapon: 
+    base: umbral flames
+  keepsakes:
+    - ghost onion
+  boons:
+    - nova strike
+    - ice flourish
+    - arctic ring
+    - blinding rush
+    - flood gain
+    - furious blaze
+    - mega blaze
+    - arctic gale
+    - local climate
+    - cold storage
+    - super nova
+    - flash fry
+    - racing thoughts
+    - nitro boost
+    - ancestral offering
+    - '"blessing" of Strife'
+  cards:
+    - the sorceress
+    - the wayward son
+    - huntress
+    - eternity
+    - the furies
+    - persistence
+    - the swift runner
+    - death
+
+- night: 5
+  run_type: below
+  tagline:
+  duration: 17:58.67
+  result: 
+    status: Failed
+    killed_by: Queen Lamia
+    killed_in: The Fields
+  weapon: 
+    base: sister knives
+  keepsakes:
+    - ghost onion
+  boons:
+    - ice strike
+    - heaven flourish
+    - arctic ring
+    - blinding rush
+    - lucid gain
+    - twilight curse
+    - sudden flurry
+    - static shock
+    - controlled burn
+    - mystic secrets
+    - '"blessing" of Strife'
+  cards:
+    - the sorceress
+    - the wayward son
+    - huntress
+    - the furies
+    - persistence
+    - death
+
+- night: 4
+  run_type: below
+  tagline:
+  result: 
+    status: Failed
+    killed_by: Lamia
+    killed_in: The Fields
+  duration: 18:17.00 
+  weapon: 
+    base: sister blades
+  keepsakes:
+    - ghost onion
+  boons:
+    - flame strike
+    - solar ring
+    - glamour gain
+    - twilight curse
+    - dancing knives
+    - rapid onslaught
+    - steady growth
+    - sweet surrender
+    - pyro technique
+    - support fire
+    - '"blessing" of Strife'
+  cards:
+    - the sorceress
+    - the wayward son
+    - the furies
+    - persistence
+    - death
+
+- night: 3
+  run_type: below
+  tagline:
+  result:
+    status: Failed
+    killed_by: Shellback
+    killed_in: Oceanus
+  duration: 10:34.25
+  weapon: 
+    base: witch's staff
+  keepsakes:
+    - ghost onion
+  boons:
+    - flame strike
+    - ice flourish
+    - smoulder ring
+    - frigid rush
+    - aetheric moonburst
+    - hydraulic might
+    - steady growth
+    - hot pot
+    - vital signs
+  cards:
+    - the sorceress
+    - the wayward son
+    - the furies
+    - persistence
+
+- night: 2
+  run_type: below
+  tagline:
+  result:
+    status: Failed
+    killed_by: ?
+    killed_in: Oceanus
+  duration: 13:37.98
+  weapon: 
+    base: witch's staff
+  boons:
+    - wave strike
+    - ice flourish
+    - solar ring
+    - frigid rush
+    - local climate
+    - heart breaker
+    - tropical cyclone
+  cards:
+    - the sorceress
+    - the wayward son
+    - the furies
+    - persistence
+
+- night: 1
+  run_type: below
+  tagline:
+  duration: 7:57.86
+  result:
+    status: Failed
+    killed_by: Spindle
+    killed_in: Erebus
+  weapon: 
+    base: witch's staff
+  boons:
+    - arctic ring
+    - lucid gain
+    - spiritual affirmation

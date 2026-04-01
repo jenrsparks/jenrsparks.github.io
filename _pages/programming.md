@@ -3,7 +3,7 @@ title: Programming
 id: Programming
 permalink: /programming
 category: Programming
-loyout: page
+layout: default
 navigation_include: true
 ---
 
