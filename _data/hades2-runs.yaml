@@ -5,7 +5,7 @@
 #   result: 
 #     status: 
 #     killed_by: 
-#     killed_in: 
+#     ended_in: 
 #   weapon: 
 #     base: 
 #     aspect: 
@@ -20,13 +20,13 @@
 #     - 
 
 - night: 44
-  run_type: below
+  run_type: normal
   tagline: dynamic duos
   duration: 25:36.56
   result: 
     status: Prevailed
     killed_by: 
-    killed_in: 
+    ended_in: Tartarus
   weapon: 
     base: wand
     aspect: circe
@@ -82,11 +82,9 @@
   result: 
     status: Cleared
     killed_by: 
-    killed_in: 
+    ended_in: Ephyra
   weapon: 
-    base: axe
-    aspect: moonstone?
-  familiar: 
+    base: Moonstone Axe
   keepsakes:
     - sword hilt
   boons:
@@ -99,7 +97,7 @@
     - grievous blow
     - visceral impact
     - mutual distruction
-    - cut above
+    - cut normal
     - rallying cry
     - nimble limbs
     - plasma
@@ -120,13 +118,13 @@
     - divinity
 
 - night: 42
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 25:12.31
   result: 
     status: Prevailed
     killed_by: 
-    killed_in: 
+    ended_in: Tartarus
   weapon: 
     base: coat
     aspect: selene
@@ -181,352 +179,352 @@
   vows:
     - vow of hubris: 2
 
-- night: 41
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 41
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 40
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
-
-
-- night: 39
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
-
-- night: 38
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
-
-- night: 37
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
-
-- night: 36
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 40
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
 
-- night: 35
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 39
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 34
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 38
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 33
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 37
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 32
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 36
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 31
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
 
-- night: 30
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 35
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 29
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 34
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 28
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 33
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 27
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 32
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
-- night: 26
-  run_type: 
-  tagline: 
-  duration: 
-  result: 
-    status: 
-    killed_by: 
-    killed_in: 
-  weapon: 
-    base: 
-    aspect: 
-  familiar: 
-  keepsakes:
-    - 
-  boons:
-    - 
-  cards:
-    -
-  vows:
-    - 
+# - night: 31
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
+# - night: 30
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
+# - night: 29
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
+# - night: 28
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
+# - night: 27
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
+
+# - night: 26
+#   run_type: 
+#   tagline: 
+#   duration: 
+#   result: 
+#     status: 
+#     killed_by: 
+#     ended_in: 
+#   weapon: 
+#     base: 
+#     aspect: 
+#   familiar: 
+#   keepsakes:
+#     - 
+#   boons:
+#     - 
+#   cards:
+#     -
+#   vows:
+#     - 
 
 - night: 25
-  run_type: above
+  run_type: normal
   tagline: Surface Scourer
   duration: 38:01.63
   result: 
     status: Prevailed
     killed_by: 
-    killed_in: 
+    ended_in: The Summit
   weapon: 
     base: Sister Blades
   familiar: Gale
@@ -581,13 +579,13 @@
     - divinity
 
 - night: 24
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 38:17.37
   result: 
     status: Failed
     killed_by: Tail of Typhon
-    killed_in: The Summit
+    ended_in: The Summit
   weapon: 
     base: Moonstone Axe
   familiar: Toula
@@ -640,13 +638,13 @@
     - Vow of Wards: 1
 
 - night: 23
-  run_type: chaos
+  run_type: chaos,
   tagline: trial of humility
   duration: 7:28.73
   result: 
-    status: cleared
+    status: Cleared
     killed_by: 
-    killed_in: 
+    ended_in: Erebus
   weapon: 
     base: witch's staff
   keepsakes:
@@ -660,13 +658,13 @@
     - extra dose
 
 - night: 22
-  run_type: above 
+  run_type: normal 
   tagline: 
   duration: 28:14.96
   result: 
-    status: failed
+    status: Failed
     killed_by: Spawn of Typhon
-    killed_in: The Summit
+    ended_in: The Summit
   weapon: 
     base: Black Coat
   familiar: Raki
@@ -717,9 +715,9 @@
   tagline: trial of salt
   duration: 4:35.34
   result: 
-    status: cleared
+    status: Cleared
     killed_by: 
-    killed_in: 
+    ended_in: Oceanus
   weapon: 
     base: sister blades
   keepsakes:
@@ -749,9 +747,9 @@
   tagline: trial of origin
   duration: 7:55.76
   result: 
-    status: cleared
+    status: Cleared
     killed_by: 
-    killed_in: 
+    ended_in: Erebus
   weapon: 
     base: witch's staff
   familiar: 
@@ -773,13 +771,13 @@
     - the sorceress
 
 - night: 19
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 32:33.67
   result: 
     status: Failed
     killed_by: Chronos
-    killed_in: Tartarus
+    ended_in: Tartarus
   weapon: 
     base: Staff
     aspect: Circe
@@ -826,13 +824,13 @@
     - divinity
 
 - night: 18
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 25:02.60
   result: 
     status: Failed
     killed_by: Prometheus
-    killed_in: Olympus
+    ended_in: Olympus
   weapon: 
     base: Black Coat
   familiar: Toula
@@ -878,13 +876,13 @@
     - the boatman
 
 - night: 17
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 11:28.20
   result: 
     status: Failed
     killed_by: Blasket
-    killed_in: Thessaly
+    ended_in: Thessaly
   weapon: 
     base: Moonstone Axe
   familiar: Toula
@@ -916,13 +914,13 @@
     - the boatman
 
 - night: 16
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 27:42.47
   result: 
     status: Failed
     killed_by: Prometheus
-    killed_in: Olympus
+    ended_in: Olympus
   weapon: 
     base: Sister Blades
   familiar: Raki
@@ -968,13 +966,13 @@
     - the boatman
 
 - night: 15
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 13:03.98
   result: 
-    status: failed
+    status: Failed
     killed_by: Stickler
-    killed_in: Thessaly
+    ended_in: Thessaly
   weapon: 
     base: Argent Skull
   familiar: Raki
@@ -1006,13 +1004,13 @@
     - the boatman
 
 - night: 14
-  run_type: night
+  run_type: normal
   tagline: 
   duration: 27:05.14
   result: 
-    status: prevailed
+    status: Prevailed
     killed_by: 
-    killed_in: 
+    ended_in: Tartarus
   weapon: 
     base: sister blades
   familiar: Raki
@@ -1055,13 +1053,13 @@
     - the boatman
 
 - night: 13
-  run_type: below
+  run_type: normal
   tagline: Titan Slayer
   duration: 27:16.82
   result: 
-    status: prevailed
+    status: Prevailed
     killed_by: 
-    killed_in: 
+    ended_in: Tartarus
   weapon: 
     base: witch's staff
   familiar: frinos
@@ -1103,13 +1101,13 @@
     - the boatman
 
 - night: 12
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 24:02.46
   result: 
     status: Failed
     killed_by: Chronos
-    killed_in: Tartarus
+    ended_in: Tartarus
   weapon: 
     base: Sister Blades
   familiar: 
@@ -1148,13 +1146,13 @@
     - the boatman
 
 - night: 11
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 1:12.04
   result: 
     status: Failed
-    killed_by: ?
-    killed_in: Ephyra
+    killed_by: "?"
+    ended_in: Ephyra
   weapon: 
     base: Sister Blades
   keepsakes:
@@ -1178,13 +1176,13 @@
     - the boatman
 
 - night: 10
-  run_type: above
+  run_type: normal
   tagline: 
   duration: 0:57.56
   result: 
     status: Failed
-    killed_by: ?
-    killed_in: Ephyra
+    killed_by: "?"
+    ended_in: Ephyra
   weapon: 
     base: Sister Blades
   keepsakes:
@@ -1207,13 +1205,13 @@
     - the boatman
 
 - night: 9
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 8:21.69
   result: 
     status: Failed
     killed_by: King Vermin
-    killed_in: Oceanus
+    ended_in: Oceanus
   weapon: 
     base: Moonstone Axe
   keepsakes:
@@ -1245,13 +1243,13 @@
     - the boatman
 
 - night: 8
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 29:08.49
   result: 
     status: Failed
     killed_by: Goldwrath
-    killed_in: Tartarus
+    ended_in: Tartarus
   weapon: 
     base: Umbral Flames
   keepsakes:
@@ -1287,13 +1285,13 @@
     - death
 
 - night: 7
-  run_type: below
+  run_type: normal
   tagline: 
   duration: 16O52.48
   result: 
     status: Failed
     killed_by: Scylla
-    killed_in: Oceanus
+    ended_in: Oceanus
   weapon: 
     base: Moonstone Axe
   keepsakes:
@@ -1321,13 +1319,13 @@
     - death
 
 - night: 6
-  run_type: below
+  run_type: normal
   tagline:
   duration: 31:32.50
   result:
     status: Failed
     killed_by: Chronos
-    killed_in: Tartarus
+    ended_in: Tartarus
   weapon: 
     base: umbral flames
   keepsakes:
@@ -1360,13 +1358,13 @@
     - death
 
 - night: 5
-  run_type: below
+  run_type: normal
   tagline:
   duration: 17:58.67
   result: 
     status: Failed
     killed_by: Queen Lamia
-    killed_in: The Fields
+    ended_in: The Mourning Fields
   weapon: 
     base: sister knives
   keepsakes:
@@ -1392,12 +1390,12 @@
     - death
 
 - night: 4
-  run_type: below
+  run_type: normal
   tagline:
   result: 
     status: Failed
     killed_by: Lamia
-    killed_in: The Fields
+    ended_in: The Mourning Fields
   duration: 18:17.00 
   weapon: 
     base: sister blades
@@ -1423,12 +1421,12 @@
     - death
 
 - night: 3
-  run_type: below
+  run_type: normal
   tagline:
   result:
     status: Failed
     killed_by: Shellback
-    killed_in: Oceanus
+    ended_in: Oceanus
   duration: 10:34.25
   weapon: 
     base: witch's staff
@@ -1451,12 +1449,12 @@
     - persistence
 
 - night: 2
-  run_type: below
+  run_type: normal
   tagline:
   result:
     status: Failed
-    killed_by: ?
-    killed_in: Oceanus
+    killed_by: "?"
+    ended_in: Oceanus
   duration: 13:37.98
   weapon: 
     base: witch's staff
@@ -1475,13 +1473,13 @@
     - persistence
 
 - night: 1
-  run_type: below
+  run_type: normal
   tagline:
   duration: 7:57.86
   result:
     status: Failed
     killed_by: Spindle
-    killed_in: Erebus
+    ended_in: Erebus
   weapon: 
     base: witch's staff
   boons:

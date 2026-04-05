@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@observablehq/plot": "^0.6.17",
     "fslightbox": "^3.7.5"
   }
 }
