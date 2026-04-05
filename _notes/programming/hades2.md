@@ -5,75 +5,23 @@ published: true
 category: Programming
 ---
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
 
+The Hades series (and lets be honest, pretty much everything from Supergiant Games) has won my heart - so much that when its pre-release was announced, it pushed me over the edge after two years to _finally_ purchase the Steam Deck.
+
+With all the runs I've done, though, and a record keeper to let me go look at them, I couldn't resist the temptataion to visualize the data. Below is the collective of views I've created using my post-release game file.
+
+I intend to continue updating it as I play more, however I can't promise that will be anywhere near real time. I haven't found a good way to automate it yet. 😉
+<hr/>
+<h3 style="font-family: 'Marcellus', serif; font-weight: 400; font-style: normal;">Depth by Runs</h3>
 <div id="hades-plot"></div>
 
-<script type="text/javascript">
-
-const regions = {
-    "Erebus":              {"level": 1, "position": "below"},
-    "Ephyra":              {"level": 1, "position": "above"},
-    "Oceanus":             {"level": 2, "position": "below"},
-    "Thessaly":            {"level": 2, "position": "above"},
-    "The Mourning Fields": {"level": 3, "position": "below"},
-    "Olympus":             {"level": 3, "position": "above"},
-    "Tartarus":            {"level": 4, "position": "below"},
-    "The Summit":          {"level": 4, "position": "above"}
-};
-const getDepth = (location) => {
-    return regions[location]?.level || 0;
-};
-const getPosition = (location) => {
-    return regions[location]?.position || "unknown";
-};
-
-const rawRunData = {{ site.data.hades2-runs | jsonify }};
-var perLevelData = [];
-console.info("records to process: " + rawRunData.length);
-rawRunData.forEach((run) => {
-    console.info("Working on run: " + run.night);
-    var totalDepth = getDepth(run.result?.ended_in);
-    if(totalDepth != null) {
-        for(var i = 1; i <= totalDepth; i++) {
-            var levelResult = (i === totalDepth) ? (run.result.status === "Failed" ? 0 : 1) : 1;
-            var thisEntry = {
-                    "night": run.night,
-                    "position": getPosition(run.result.ended_in),
-                    "is_level_success": levelResult,
-                    "level": i
-                };
-            perLevelData.push(thisEntry);
-        }
-    }
-    console.log("Total objects: " + perLevelData.length);
-});
-
-const chart = Plot.plot({
-    aspectRatio: 1,
-    x: {label: "Runs"},
-    y: {
-        grid: true,
-        label: "← Below · Above →",
-        labelAnchor: "center",
-        tickFormat: Math.abs
-    },
-    marks: [
-        Plot.dot(
-            perLevelData,
-            Plot.stackY2({
-                x: (d) => d.night,
-                y: (d) => (d.position === "above") ? 1 : -1,
-                fill: "night",
-                title: "placeholder"
-            })
-        ),
-        Plot.ruleY([0])
-    ]
-  });
-
-  // 4. Attach it to your div
-  document.getElementById("hades-plot").append(chart);
-
+<script>
+  // We attach it to the window object so the external file can see it
+  window.HadesData = {{ site.data.hades2-runs | jsonify }};
 </script>
+<script src="{{ 'assets/scripts/projects/hades2-nights.js' | relative_url }}" type="module"></script>
