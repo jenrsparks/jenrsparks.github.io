@@ -36,7 +36,7 @@ nights:
   #     ended_in: 
   #   weapon: 
   #     base: 
-  #     aspect: 
+  #     aspect: Melinoë (default)
   #   familiar: 
   #   keepsakes:
   #     - 
@@ -47,6 +47,563 @@ nights:
   #   vows:
   #     - 
 
+  - night: 54
+    run_type: normal 
+    tagline: 
+    duration: 27:03.90
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Sister Blades
+      aspect: Melinoë
+    familiar: Hecuba
+    keepsakes:
+      - Harmonic Photon
+      - Fig Leaf
+      - Moon Beam
+      - Knuckle Bones
+    boons:
+      - Nova Strike
+      - Ice Flourish
+      - Smoulder Ring
+      - Nexus Rush
+      - Twilight Curse
+      - Purpose
+      - Growth
+      - Exposure
+      - Humility
+      - Ambition
+      - Decline
+      - Sustenance
+      - Dancing Knives
+      - Trick Knives
+      - Extended Family
+      - Bridal Glow
+      - Rousing Reception
+      - Light Smite
+      - Super Nova
+      - Extra Dose
+      - Self Healing
+      - Glowing Coal
+      - Pyro Technique
+      - Snuffed Candle
+      - Stalwart Stand
+      - Bottomless Drink
+      - Hasty Retreat
+      - Tall Order
+      - Freezer Burn
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+    vows:
+      - Vow of Fangs: 1
+      - Vow of Hubris: 2
+
+
+  - night: 53
+    run_type: Normal
+    tagline: 
+    duration: 37:30.65
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Black Coat
+      aspect: Melinoë
+    familiar: Hecuba
+    keepsakes:
+      - Barley Sheaf
+      - Fig Leaf
+      - Concave Stone
+      - Knuckle Bones
+    boons:
+      - Flutter Strike
+      - Ice Flourish
+      - Arctic Ring
+      - Frigid Rush
+      - Glamour Gain
+      - Lunar Ray
+      - Launcher Frame
+      - Sudden Salvo
+      - Old Herbal Remedy
+      - Corrosion on Sight
+      - Explosive Intent
+      - Bridal Glow
+      - Rousing Reception
+      - Proper Upbringing
+      - Cold Storage
+      - Spiritual Affirmation
+      - Secret Crush
+      - Wispy Wiles
+      - Molten Touch
+      - Uncanny Fortitude
+      - Martial Art
+      - Stalwart Stand
+      - Racing Thoughts
+      - Stutter Step
+      - Hearty Appetite
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+    vows:
+      - 
+
+  - night: 52
+    run_type: Chaos
+    tagline: Trial of Precarity
+    duration: 8:03.40
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Ephyra
+    weapon: 
+      base: Argent Skull
+      aspect: Madea
+    familiar: 
+    keepsakes:
+      - Experimental Hammer
+    boons:
+      - Nova Strike
+      - Ice Flourish
+      - Tidal Ring
+      - Blinding Rush
+      - Lucid Gain
+      - Twilight Curse
+      - Twisting Crash
+      - Looming Ignition
+      - Hazard Boom
+      - Arctic Gale
+      - Super Nova
+      - Blood Spree
+      - Easy Shot
+      - Mean Streak
+    cards:
+      - The Wayward Son
+      - Eternity
+      - The Moon
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Unseen
+      - Night
+      - Death
+      - The Centaur
+    vows:
+      - Vow of Hubris: 2
+
+  - night: 51
+    run_type: Chaos
+    tagline: Trial of Destiny
+    duration: 8:10.31
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Olympus
+    weapon: 
+      base: Sister Blades
+      aspect: Melinoë
+    familiar: Raki
+    keepsakes:
+      - Transcendent Embryo
+    boons:
+      - Vicious Strike
+      - Heaven Flourish
+      - Sword Ring
+      - Ionic Gain
+      - Night Bloom
+      - Skulking Onslaught
+      - Trick Knives
+      - Divine Vengeance
+      - Lightning Dance
+      - Static Shock
+      - Electric Overload
+      - Air Quality
+      - Snuffed Candle
+      - Profuse Bleeding
+      - Grievous Blow
+      - Blood Spree
+      - Hasty Retreat
+      - Success Rate
+      - Celerity
+      - Plasma
+      - Shocking Loss
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - Persistence
+      - Death
+      - The Centaur
+      - The Enchantress
+      - The Boatman
+      - The Queen
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Denial: 2
+
+  - night: 50
+    run_type: normal
+    tagline: Ten Times
+    duration: 22:19.87
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Umbral Flames
+      aspect: Eos
+    familiar: Hecuba
+    keepsakes:
+      - Iridescent Fan
+      - Fig Leaf
+      - Engraved Pin
+      - Knuckle Bones
+    boons:
+      - Flutter Strike
+      - Volcanic Flourish
+      - Engagement Ring
+      - Breaker Rush
+      - Glamour Gain
+      - Dark Side
+      - Lineage
+      - Bloodthirst
+      - Focus
+      - Tension
+      - Contingency
+      - Allure of Aphrodite
+      - Enduring Coil
+      - Rising Helix
+      - Rousing Reception
+      - Proper Upbringing
+      - Spiritual Affirmation
+      - Broken Resolve
+      - Sweet Surrender
+      - Heartbreaker
+      - Molten Touch
+      - Uncanny Fortitude
+      - Shadow Pounce
+      - Winner's Circle
+      - Hasty Retreat
+      - Ancestral Offering
+      - Fight Fight Fight
+      - Creation
+      - Ecstatic Obsession
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+    vows:
+      - Vow of Fangs: 2
+
+  - night: 49
+    run_type: Chaos
+    tagline: Trial of Glory
+    duration: 11:26.33
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Olympus
+    weapon: 
+      base: Black Coat
+      aspect: Melinoë
+    familiar: 
+    keepsakes:
+      - Iridescent Fan
+    boons:
+      - Sworn Strike
+      - Heaven Flourish
+      - Storm Ring
+      - Nexus Rush
+      - Born Gain
+      - Melting Cross
+      - World Collider
+      - Launcher Frame
+      - Power Surge
+      - Air Quality
+      - Extended Family
+      - Hereditary Bane
+      - Uncommon Grace
+      - Fine Line
+      - Proper Upbringing
+      - Frosty Veneer
+      - Self Healing
+      - Wispy Wiles
+      - Molten Touch
+      - Martial Art
+      - Blood Spree
+      - Nimble Limbs
+      - Brave Face
+      - All Together
+    cards:
+      - The Moon
+      - Persistence
+      - Night
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - Origination
+      - The Lovers
+      - The Enchantress
+      - Excellence
+      - The Queen
+      - Divinity
+
+  - night: 48
+    run_type: normal
+    tagline: 
+    duration: 27:48.16
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Umbral Flames
+      aspect: Eos
+    familiar: Toula
+    keepsakes:
+      - Silver Wheel
+      - Fig Leaf
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Heaven Strike
+      - Ice Flourish
+      - Sword Ring
+      - Smithy Rush
+      - Grisley Gain
+      - Meta Blaze
+      - Power Surge
+      - Arc Flash
+      - Plentiful Forage
+      - Snow Queen
+      - Molten Touch
+      - Uncanny Fortitude
+      - Martial Art
+      - Blood Spree
+      - Nitro Boost
+      - Plasma
+      - Coffin Nail
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+    vows:
+      - 
+  - night: 47
+    run_type: normal
+    tagline: 
+    duration: 25:42.12
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Witch's Staff
+      aspect: Circe
+    familiar: Toula
+    keepsakes:
+      - Cloud Bangle
+      - Concave Stone
+      - Fig Leaf
+      - Knuckle Bones
+    boons:
+      - Heaven Strike
+      - Nova Flourish
+      - Rapture Ring
+      - Breaker Rush
+      - Flood Gain
+      - Night Bloom
+      - Preparation
+      - Devotion
+      - Growth
+      - Purpose
+      - Selflessness
+      - Rapid Thrasher
+      - Mirrored Thrasher
+      - Word of Smaller Stature
+      - Suffering on Sight
+      - Sea Star
+      - Perfect Image
+      - Super Nova
+      - Spiritual Affirmation
+      - Wispy Wiles
+      - Mental Block
+      - Bounce Back
+      - Nitro Boost
+      - Mean Streak
+      - Romantic Spark
+      - Beach Ball
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+
+  - night: 46
+    run_type: Chaos
+    tagline: Trial of Salt
+    duration: 4:22.36
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Oceanus
+    weapon: 
+      base: Sister Blades
+      aspect: Melinoë
+    familiar: 
+    keepsakes:
+      - Knuckle Bones
+    boons:
+      - Wave Strike
+      - Tidal Ring
+      - Breaker Rush
+      - Flood Gain
+      - Sureshot Flurry
+      - Hydraulic Might
+      - High Surf
+      - Slippery Slope
+      - Ocean Swell
+      - Water Fitness
+      - Strike
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Furies
+      - Persistence
+      - Death
+
+  - night: 45
+    run_type: normal
+    tagline: Hand of Poseidon
+    duration: 25:36.19
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Black Coat
+      aspect: Melinoë
+    familiar: Toula
+    keepsakes:
+      - Vivid Sea
+      - Experimental Hammer
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Wave Strike
+      - Ice Flourish
+      - Arctic Ring
+      - Heat Rush
+      - Flood Gain
+      - Twilight Curse
+      - Exposure
+      - Purpose
+      - Humility
+      - Decline
+      - Temper of Zeus
+      - Exhaust Riser
+      - Ripper Rockets
+      - Life from the Dead
+      - Static Shock
+      - Hydraulic Might
+      - Buried Treasure
+      - High Surf
+      - Slippery Slope
+      - Arctic Gale
+      - Frosty Veneer
+      - Snuffed Candle
+      - Stalwart Stand
+      - Bottomless Drink
+      - Nimble Limbs
+      - King Tide
+    cards:
+      - the wayward son
+      - the huntress
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - night
+      - the swift runner
+      - death
+      - the centaur
+      - the lovers
+      - the enchantress
+      - the boatman
+      - the fates
+      - the champions
+      - divinity
+
   - night: 44
     run_type: normal
     tagline: dynamic duos
@@ -56,8 +613,8 @@ nights:
       killed_by: 
       ended_in: Tartarus
     weapon: 
-      base: wand
-      aspect: circe
+      base: Witch's Staff
+      aspect: Circe
     familiar: toula
     keepsakes:
       - vivid sea
@@ -102,7 +659,7 @@ nights:
       - the fates
       - the champions
       - divinity
-    vows:
+
   - night: 43
     run_type: chaos
     tagline: trial of slaughter
@@ -113,17 +670,18 @@ nights:
       ended_in: Ephyra
     weapon: 
       base: Moonstone Axe
+      aspect: Melinoë
     keepsakes:
       - sword hilt
     boons:
-      - viscious strike
-      - vicious flourish
+      - Vicious strike
+      - Vicious flourish
       - sword ring
       - grisly gain
       - giga cleaver
       - profuse bleeding
       - grievous blow
-      - visceral impact
+      - Visceral impact
       - mutual distruction
       - cut normal
       - rallying cry
@@ -154,8 +712,8 @@ nights:
       killed_by: 
       ended_in: Tartarus
     weapon: 
-      base: coat
-      aspect: selene
+      base: Black Coat
+      aspect: Selene
     familiar: toula
     keepsakes:
       - sword hilt
@@ -207,343 +765,821 @@ nights:
     vows:
       - vow of hubris: 2
 
-  # - night: 41
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 41
+    run_type: normal
+    tagline: 
+    duration: 35:36.05
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Sister Blades
+      aspect: Pan
+    familiar: Hecuba
+    keepsakes:
+      - Everlasting Ember
+      - Concave Stone
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Vicious Strike
+      - Flame Flourish
+      - Arctic Ring
+      - Heat Rush
+      - Glamour Gain
+      - Night Bloom
+      - Purpose
+      - Growth
+      - Devotion
+      - Selflessness
+      - Reaper Knives
+      - Wicked Onslaught
+      - Word of Smaller Stature
+      - Wealth from the Dead
+      - Arctic Gale
+      - Frosty Veneer
+      - Shameless Attitude
+      - Broken Resolve
+      - Sweet Surrender
+      - Grievous Blows
+      - Visceral Impact
+      - Mutual Destruction
+      - Blood Spree
+      - Tipsy Shot
+      - Hasty Retreat
+      - Success Rate
+      - Discovery
+      - Plasma
+      - Freezer Burn
+      - Burning Desire
+    cards:
+      - The Wayward Son
+      - The Huntress
+      - The Moon
+      - The Furies
+      - Persistence
+      - The Messenger
+      - Night
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Hubris: 2
 
-  # - night: 40
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 40
+    run_type: Chaos
+    tagline: Trial of the Moon
+    duration: 7:19.32
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Erebus
+    weapon: 
+      base: Moonstone Axe
+      aspect: Charon
+    familiar: Hecuba
+    keepsakes:
+      - Moon Beam
+    boons:
+      - Ice Strike
+      - Solar Ring
+      - Glamour Gain
+      - Lunar Ray
+      - Growth
+      - Lineage
+      - Purpose
+      - Bearing
+      - Intensity
+      - Contact
+      - Obstinance
+      - Prominence
+      - Shine of Apollo
+      - Sudden Cleaver
+      - Lightning Lance
+      - Super Nova
+      - Quick Buck
+    cards:
+      - The Sorceress
+      - The Huntress
+      - Eternity
+      - The Moon
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Unseen
+      - Death
+      - The Centaur
+
+  - night: 39
+    run_type: normal
+    tagline: 
+    duration: 7:39.53
+    result: 
+      status: Failed
+      killed_by: Hecate
+      ended_in: Erebus
+    weapon: 
+      base: Black Coat
+      aspect: Melinoë
+    familiar: Hecuba
+    keepsakes:
+      - Vivid Sea
+    boons:
+      - Volcanic Strike
+      - Breaker Rush
+      - Rapid Frame
+      - Hydraulic Might
+      - Arctic Gale
+      - Snuffed Candle
+      - Killing Stroke
+      - Ordinary
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Rivals: 1
+
+  - night: 38
+    run_type: Chaos
+    tagline: Trial of Fury
+    duration: 5:41.80
+    result: 
+      status: Cleared
+      killed_by:
+      ended_in: Oceanus
+    weapon: 
+      base: Black Coat
+      aspect: Selene
+    familiar: 
+    keepsakes:
+      - Silken Sash
+    boons:
+      - Flame Strike
+      - Flame Flourish
+      - Engagement Ring
+      - Smithy Rush
+      - Born Gain
+      - Sky Fall
+      - Dying Wish
+      - Fine Line
+      - Heavy Metal
+      - Trusty Shield
+      - Controlled Burn
+      - Hot Pot
+      - Brave Face
+      - Incandescent Aura
+    cards:
+      - The Huntress
+      - Eternity
+      - The Moon
+      - Persistence
+      - Death
+      - Origination
+      - The Queen
+      - The Champions
+
+  - night: 37
+    run_type: Chaos
+    tagline: Trial of Gold
+    duration: 7:57.63
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Ephyra
+    weapon: 
+      base: Sister Blades
+      aspect: Pan
+    familiar: 
+    keepsakes:
+      - Gold Purse
+    boons:
+      - Sworn Strike
+      - Wave Flourish
+      - Engagement Ring
+      - Nexus Rush
+      - Flood Gain
+      - Dancing Knives
+      - Dying Wish
+      - Hereditary Bane
+      - Buried Treasure
+      - Sea Star
+      - Geyser Spout
+      - Quick Buck
+      - Paid Dues
+    cards:
+      - The Wayward Son
+      - Persistence
+      - Death
+      - The Centaur
+      - The Boatman
+      - The Artificer
+      - The Queen
+
+  - night: 36
+    run_type: normal
+    tagline: 
+    duration: 39:15.79
+    result: 
+      status: Failed
+      killed_by: Spawn of Typhon
+      ended_in: The Summit
+    weapon: 
+      base: Black Coat
+      aspect: Melinoë
+    familiar: Hecuba
+    keepsakes:
+      - Beautiful Mirror
+      - Concave Stone
+      - Knuckle Bones
+      - Evil Eye
+    boons:
+      - Vicious Strike
+      - Ice Flourish
+      - Rapture Ring
+      - Breaker Rush
+      - Glamour Gain
+      - Phase Shift
+      - Melting Cross
+      - Shimmering Rockets
+      - Suffering on Sight
+      - Ingenious Flourish
+      - Hydraulic Might
+      - Plentiful Forage
+      - Shameless Attitude
+      - Spiritual Affirmation
+      - Broken Resolve
+      - Sweet Surrender
+      - Secret Crush
+      - Wispy Wiles
+      - Grievous Blows
+      - Visceral Impact
+      - Blood Spree
+      - Cut Above
+      - Renewed Faith
+      - Happy Haze
+      - Nimble Limbs
+      - Success Rate
+      - Plasma
+      - Carnal Pleasure
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Hubris: 1
 
 
-  # - night: 39
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 35
+    run_type: normal 
+    tagline: 
+    duration: 28:39.39
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Sister Blades
+      aspect: Artemis
+    familiar: Hecuba
+    keepsakes:
+      - Sword Hilt
+      - Silken Sash
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Flutter Strike
+      - Vicious Flourish
+      - Rapture Ring
+      - Breaker Rush
+      - Glamour Gain
+      - Dark Side
+      - Melting Sickle
+      - Final Slice
+      - Wicked Onslaught
+      - Bridal Glow
+      - High Surf
+      - Sweet Surrender
+      - Meat Grinder
+      - Grievous Blow
+      - Blood Spree
+      - Quick Buck
+      - Deep Dissent
+      - Island Getaway
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Hubris: 1
 
-  # - night: 38
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 34
+    run_type: normal
+    tagline: 
+    duration: 22:09.31
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Witch's Staff
+      aspect: Circe
+    familiar: Toula
+    keepsakes:
+      - Vivid Sea
+      - Barley Sheaf
+      - Experimental Hammer
+      - Knuckle Bones
+    boons:
+      - Flame Strike
+      - Ice Flourish
+      - Tidal Ring
+      - Blinding Rush
+      - Phase Shift
+      - Rapid Moonshot
+      - Giga Moonburst
+      - Mirrored Thrasher
+      - Plentiful Forage
+      - Super Nova
+      - Glowing Coal
+      - Hot Pot
+      - Slow Cooker
+      - Vital Signs
+      - Hard Target
+      - Deep Dissent
+      - Mixed Blessings
+      - Scalding Vapor
+      - Beach Ball
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Hubris: 1
 
-  # - night: 37
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 33
+    run_type: Chaos
+    tagline: Trial of Flame
+    duration: 08:10.71
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: The Mourning Fields
+    weapon: 
+      base: Umbral Flames
+      aspect: Moros
+    keepsakes:
+      - Everlasting Ember
+    boons:
+      - Wave Strike
+      - Flame Flourish
+      - Tidal Ring
+      - Heat Rush
+      - Cardio Gain
+      - Hidden Helix
+      - Clean Coil
+      - Hydraulic Might
+      - Slippery Slope
+      - Water Fitness
+      - Highly Flammable
+      - Glowing Coal
+      - Flash Fry
+      - Hot Pot
+      - Pyro Technique
+      - Snuffed Candle
+      - Slow Cooker
+      - Scalding Vapor
+    cards:
+      - The Wayward Son
+      - Persistence
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - Origination
+      - The Lovers
+      - The Boatman
+      - The Queen
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Wards: 2
 
-  # - night: 36
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 32
+    run_type: normal
+    tagline: 
+    duration: 27:54.13
+    result: 
+      status: 
+      killed_by: 
+      ended_in: The Summit
+    weapon: 
+      base: Umbral Flames
+      aspect: Eos
+    familiar: Hecuba
+    keepsakes:
+      - Knuckle Bones
+      - Adamant Shard
+      - Concave Stone
+      - Evil Eye
+    boons:
+      - Vicious Strike
+      - Flame Flourish
+      - Rapture Ring
+      - Smithy Rush
+      - Glamour Gain
+      - Mega Blaze
+      - Leaden Blaze
+      - Red Citrine Divination
+      - Trace of Spirit
+      - Ingenious Strike
+      - Sweet Surrender
+      - Secret Crush
+      - Molten Touch
+      - Security System
+      - Uncanny Fortitude
+      - Furnace Blast
+      - Marshall Art
+      - Snuffed Candle
+      - Profuse Bleeding
+      - Grievous Blow
+      - Cut Above
+      - Rallying Cry
+      - Nimble Limbs
+      - Plasma
+      - Carnal Pleasure
+      - Sanguinary Savor
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Unseen
+      - Night
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - Origination
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Artificer
+      - Excellence
+      - The Queen
+      - The Fates
+      - The Champions
+      - Divinity
+      - Judgement
+    vows:
+      - Vow of Wards: 1
 
+  - night: 31
+    run_type: chaos
+    tagline: Trial of Vigor
+    duration: 5:58.67
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Oceanus
+    weapon: 
+      base: Witch's Staff
+      aspect: Momus
+    familiar: 
+    keepsakes:
+      - Blackened Fleece
+    boons:
+      - Vicious Strike
+      - Flame Flourish
+      - Sword Ring
+      - Stabbing Rush
+      - Cardio Gain
+      - Vampiric Cataclysm
+      - Mirror Thrasher
+      - Hot Pot
+      - Snuffed Candle
+      - Grievous Blow
+      - Mutual Destruction
+      - Blood Spree
+      - Rallying Cry
+      - Travel Deal
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Moon
+      - Persistence
+      - The Unseen
+      - Death
+      - Origination
+      - The Queen
 
-  # - night: 35
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 30
+    run_type: normal
+    tagline: 
+    duration: 30:08.09
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Staff
+      aspect: Circe
+    familiar: Toula
+    keepsakes:
+      - Cloud Bangle
+      - Beautiful Mirror
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Heaven Strike
+      - Ice Flourish
+      - Smoulder Ring
+      - Frigid Rush
+      - Glamour Gain
+      - Night Bloom
+      - Devotion
+      - Purpose
+      - Melting Swipe
+      - Rapid Thrasher
+      - Arctic Gale
+      - Cold Storage
+      - Sweet Surrender
+      - Highly Flammable
+      - Glowing Coal
+      - Flash Fry
+      - Nitro Boost
+      - Old Grudge
+      - Strike
+      - Celerity
+      - Shocking Loss
+      - Fire Away
+    cards:
+      - The Sorceress
+      - The Wayward Son
+      - The Huntress
+      - The Furies
+      - Persistence
+      - The Messenger
+      - The Swift Runner
+      - Death
+      - The Centaur
+      - The Lovers
+      - The Enchantress
+      - The Boatman
+      - The Fates
+      - The Champions
+      - Divinity
+    vows:
+      - Vow of Hubris: 1
 
-  # - night: 34
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 29
+    run_type: normal
+    tagline: Trial of Thunder
+    duration: 6:22.81
+    result: 
+      status: Cleared
+      killed_by: 
+      ended_in: Erebus
+    weapon: 
+      base: Umbral Flames
+      aspect: Melinoë
+    keepsakes:
+      - Cloud Bangle
+    boons:
+      - Heaven Strike
+      - Heaven Flourish
+      - Thunder Rush
+      - Ionic Gain
+      - Wolf Howl
+      - Furious Blaze
+      - Sudden Burst
+      - Power Surge
+      - Lightning Lance
+      - Static Shock
+      - Double Strike
+      - Electric Overload
+      - Uncommon Grace
+      - Tall Order
+      - King's Randsom
+      - Shocking Loss
+    cards:
+      - The Sorceress
+      - Eternity
+      - The Moon
+      - Persistence
+      - The Unseen
+      - Death
+      - The Centaur
 
-  # - night: 33
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 28
+    run_type: normal
+    tagline: 
+    duration: 26:53.82
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Tartarus
+    weapon: 
+      base: Sister Blades
+      aspect: Melinoë
+    familiar: Gale
+    keepsakes:
+      - Adamant Shard
+      - Experimental Hammer
+      - Ghost Onion
+      - Knuckle Bones
+    boons:
+      - Volcanic Strike
+      - Heaven Flourish
+      - Tidal Ring
+      - Smithy Rush
+      - Twilight Curse
+      - Exposure
+      - Purpose
+      - Humility
+      - Dancing Knives
+      - Rapid Onsalught
+      - Static Shock
+      - Buried Treasure
+      - High Surf
+      - Sea Star
+      - Water Fitness
+      - Extra Dose
+      - Self Healing
+      - Molten Touch
+      - Furnace Blast
+      - Lethal Snare
+      - Nimble Snare
+      - Nitro Boost
+      - Gigaros Dash
+      - Fates' Trimmings
+    cards:
+      - the sorceress
+      - the wayward son
+      - the huntress
+      - eternity
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - the swift runner
+      - death
+      - the centaur
+      - the enchantress
+      - the boatman
+      - the artificer
+      - divinity
 
-  # - night: 32
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 27
+    run_type: normal
+    tagline: 
+    duration: 30:28.18
+    result: 
+      status: Failed
+      killed_by: Spawn of Typhon
+      ended_in: The Summit
+    weapon: 
+      base: Umbral Flames
+      aspect: Melinoë
+    familiar: Gale
+    keepsakes:
+      - Silver Wheel
+      - Adamant Shard
+      - Knuckle Bones
+      - Luckier Tooth
+    boons:
+      - Vicious Strike
+      - Heaven Flourish
+      - Smoulder Ring
+      - Smithy Rush
+      - Grisly Gain
+      - Wolf Howl
+      - Hunger
+      - Growth
+      - Tremor
+      - Mega Blaze
+      - Whirling Helix
+      - Power Surge
+      - Static Shock
+      - Arc Flash
+      - Extended Family
+      - Fine Line
+      - Security System
+      - Furnace Blast
+      - Flash Fry
+      - Hot Pot
+      - Blood Spree
+      - Support Fire
+      - Racing Thoughts
+      - Mean Streak
+      - Plasma
+    cards:
+      - the sorceress
+      - the wayward son
+      - the huntress
+      - eternity
+      - the moon
+      - the furies
+      - persistence
+      - the messenger
+      - the swift runner
+      - death
+      - the centaur
+      - the enchantress
+      - the boatman
+      - the artificer
+      - divinity
 
-  # - night: 31
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
-
-  # - night: 30
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
-
-  # - night: 29
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
-
-  # - night: 28
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
-
-  # - night: 27
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
-
-  # - night: 26
-  #   run_type: 
-  #   tagline: 
-  #   duration: 
-  #   result: 
-  #     status: 
-  #     killed_by: 
-  #     ended_in: 
-  #   weapon: 
-  #     base: 
-  #     aspect: 
-  #   familiar: 
-  #   keepsakes:
-  #     - 
-  #   boons:
-  #     - 
-  #   cards:
-  #     -
-  #   vows:
-  #     - 
+  - night: 26
+    run_type: chaos
+    tagline: Trial of Vengence
+    duration: 5:57.13
+    result: 
+      status: Prevailed
+      killed_by: 
+      ended_in: Ephyra
+    weapon: 
+      base: Argent Skull
+      aspect: Melinoë
+    familiar: Frinos
+    keepsakes:
+      - Evil Eye
+    boons:
+      - Sworn Strike
+      - Flutter Flourish
+      - Thunder Rush
+      - Wolf Howl
+      - Fetching Array
+      - Divine Vengeance
+      - Light Smite
+      - Super Nova
+      - Extra Dose
+      - Shameless Attitude
+      - Healthy Rebound
+    cards:
+      - The Wayward Son
+      - The Furies
+      - Persistence
+      - The Messenger
+      - Death
+    vows:
+      - Vow of Frenzy: 6
 
   - night: 25
     run_type: normal
@@ -555,6 +1591,7 @@ nights:
       ended_in: The Summit
     weapon: 
       base: Sister Blades
+      aspect: Melinoë
     familiar: Gale
     keepsakes:
       - experimental hammer
@@ -616,6 +1653,7 @@ nights:
       ended_in: The Summit
     weapon: 
       base: Moonstone Axe
+      aspect: Melinoë
     familiar: Toula
     keepsakes:
       - Barley Sheaf
@@ -675,6 +1713,7 @@ nights:
       ended_in: Erebus
     weapon: 
       base: witch's staff
+      aspect: Melinoë
     keepsakes:
       - experimental hammer
     boons:
@@ -695,6 +1734,7 @@ nights:
       ended_in: The Summit
     weapon: 
       base: Black Coat
+      aspect: Melinoë
     familiar: Raki
     keepsakes:
       - transcendent embryo
@@ -747,7 +1787,8 @@ nights:
       killed_by: 
       ended_in: Oceanus
     weapon: 
-      base: sister blades
+      base: Sister Blades
+      aspect: Melinoë
     keepsakes:
       - transcendent embryo
     boons:
@@ -779,7 +1820,8 @@ nights:
       killed_by: 
       ended_in: Erebus
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
+      aspect: Melinoë
     familiar: 
     keepsakes:
       - ghost onion
@@ -807,7 +1849,7 @@ nights:
       killed_by: Chronos
       ended_in: Tartarus
     weapon: 
-      base: Staff
+      base: Witch's Staff
       aspect: Circe
     familiar: Raki
     keepsakes:
@@ -861,6 +1903,7 @@ nights:
       ended_in: Olympus
     weapon: 
       base: Black Coat
+      aspect: Melinoë
     familiar: Toula
     keepsakes:
       - barley sheaf
@@ -913,6 +1956,7 @@ nights:
       ended_in: Thessaly
     weapon: 
       base: Moonstone Axe
+      aspect: Melinoë
     familiar: Toula
     keepsakes:
       - luckier tooth
@@ -951,6 +1995,7 @@ nights:
       ended_in: Olympus
     weapon: 
       base: Sister Blades
+      aspect: Melinoë
     familiar: Raki
     keepsakes:
       - transcendent embryo
@@ -1003,6 +2048,7 @@ nights:
       ended_in: Thessaly
     weapon: 
       base: Argent Skull
+      aspect: Melinoë
     familiar: Raki
     keepsakes:
       - transcendent embryo
@@ -1040,7 +2086,8 @@ nights:
       killed_by: 
       ended_in: Tartarus
     weapon: 
-      base: sister blades
+      base: Sister Blades
+      aspect: Melinoë
     familiar: Raki
     keepsakes:
       - transcendent embryo
@@ -1089,7 +2136,8 @@ nights:
       killed_by: 
       ended_in: Tartarus
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
+      aspect: Melinoë
     familiar: frinos
     keepsakes:
       - silken sash
@@ -1138,6 +2186,7 @@ nights:
       ended_in: Tartarus
     weapon: 
       base: Sister Blades
+      aspect: Melinoë
     familiar: 
     keepsakes:
       - transcendent embryo
@@ -1183,6 +2232,7 @@ nights:
       ended_in: Ephyra
     weapon: 
       base: Sister Blades
+      aspect: Melinoë
     keepsakes:
       - transcendent embryo
     boons:
@@ -1213,6 +2263,7 @@ nights:
       ended_in: Ephyra
     weapon: 
       base: Sister Blades
+      aspect: Melinoë
     keepsakes:
       - transcendent embryo
     boons:
@@ -1242,6 +2293,7 @@ nights:
       ended_in: Oceanus
     weapon: 
       base: Moonstone Axe
+      aspect: Melinoë
     keepsakes:
       - transcendent embryo
     boons:
@@ -1280,6 +2332,7 @@ nights:
       ended_in: Tartarus
     weapon: 
       base: Umbral Flames
+      aspect: Melinoë
     keepsakes:
       - Silken Sash
     boons:
@@ -1315,13 +2368,14 @@ nights:
   - night: 7
     run_type: normal
     tagline: 
-    duration: 16O52.48
+    duration: 16:52.48
     result: 
       status: Failed
       killed_by: Scylla
       ended_in: Oceanus
     weapon: 
       base: Moonstone Axe
+      aspect: Melinoë
     keepsakes:
       - Silken Sash
     boons:
@@ -1355,7 +2409,8 @@ nights:
       killed_by: Chronos
       ended_in: Tartarus
     weapon: 
-      base: umbral flames
+      base: Umbral Flames
+      aspect: Melinoë
     keepsakes:
       - ghost onion
     boons:
@@ -1394,7 +2449,8 @@ nights:
       killed_by: Queen Lamia
       ended_in: The Mourning Fields
     weapon: 
-      base: sister knives
+      base: Sister Blades
+      aspect: Melinoë
     keepsakes:
       - ghost onion
     boons:
@@ -1426,7 +2482,8 @@ nights:
       ended_in: The Mourning Fields
     duration: 18:17.00 
     weapon: 
-      base: sister blades
+      base: Sister Blades
+      aspect: Melinoë
     keepsakes:
       - ghost onion
     boons:
@@ -1457,7 +2514,8 @@ nights:
       ended_in: Oceanus
     duration: 10:34.25
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
+      aspect: Melinoë
     keepsakes:
       - ghost onion
     boons:
@@ -1485,7 +2543,8 @@ nights:
       ended_in: Oceanus
     duration: 13:37.98
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
+      aspect: Melinoë
     boons:
       - wave strike
       - ice flourish
@@ -1509,7 +2568,8 @@ nights:
       killed_by: Spindle
       ended_in: Erebus
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
+      aspect: Melinoë
     boons:
       - arctic ring
       - lucid gain

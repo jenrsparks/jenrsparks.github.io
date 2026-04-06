@@ -13,11 +13,11 @@ category: Programming
 
 The Hades series (and lets be honest, pretty much everything from Supergiant Games) has won my heart - so much that when its pre-release was announced, it pushed me over the edge after two years to _finally_ purchase the Steam Deck.
 
-With all the runs I've done, though, and a record keeper to let me go look at them, I couldn't resist the temptataion to visualize the data. Below is the collective of views I've created using my post-release game file.
+With all the runs I've done, though, and a record keeper to let me go look at them, I couldn't resist the temptation to visualize the data. Below is the collective of views I've created using my post-release game file.
 
 I intend to continue updating it as I play more, however I can't promise that will be anywhere near real time. I haven't found a good way to automate it yet. 😉
 <hr/>
-<h3 style="font-family: 'Marcellus', serif; font-weight: 400; font-style: normal;">Depth by Runs</h3>
+<h3 style="font-family: 'Marcellus', serif; font-weight: 400; font-style: normal;">Nightly Progress</h3>
 <div id="hades-plot"></div>
 
 <script>
