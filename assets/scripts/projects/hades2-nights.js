@@ -100,7 +100,7 @@ const renderDashboard = () => {
     });
 
     // Attach the graph for rendering
-    document.getElementById("hades-plot").append(chart);
+    document.getElementById("hades2-nights").append(chart);
 }
 
 // Wait for the DOM to be ready, then add the chart

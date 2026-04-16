@@ -23,7 +23,11 @@
             <img src="{{ include.image }}" alt="{{ include.title | default: '' }}" class="custom-card__image">
         {% endif %}
         {% if include.url %}
+            {% if include.url contains "http" %}
             <a href="{{ include.url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
+            {% else %}
+            <a href="{{ include.url | relative_url }}" class="custom-card__link">{{ include.link_text | default: "Visit" }}</a>
+            {% endif %}
         {% elsif include.link_text %}
             <span class="custom-card__link">{{ include.link_text }}</span>
         {% endif %}

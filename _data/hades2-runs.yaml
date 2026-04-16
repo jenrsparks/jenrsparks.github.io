@@ -1338,7 +1338,7 @@ nights:
       killed_by: 
       ended_in: Tartarus
     weapon: 
-      base: Staff
+      base: Witch's Staff
       aspect: Circe
     familiar: Toula
     keepsakes:
@@ -1712,7 +1712,7 @@ nights:
       killed_by: 
       ended_in: Erebus
     weapon: 
-      base: witch's staff
+      base: Witch's Staff
       aspect: Melinoë
     keepsakes:
       - experimental hammer
