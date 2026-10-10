@@ -14,7 +14,7 @@ const renderDashboard = () => {
         var weaponBase = run.weapon?.base || "Unknown";
         var weaponAspect = run.weapon?.aspect || "Unknown";
         var existingEntry = parsedData.find(entry => entry.weapon_base === weaponBase && entry.weapon_aspect === weaponAspect);
-        var weaponAspectNumber = (parsedData.filter(entry => entry.weapon_base === weaponBase)?.length || 0) + 1; // This is a bit hacky, but it allows us to assign aspect numbers based on the order they appear in the data for each weapon base, which is sufficient for our purposes and doesn't require hardcoding aspect names or counts
+        
         if(existingEntry) {
             var indexOfEntry = parsedData.indexOf(existingEntry);
             existingEntry.total += 1;
@@ -25,6 +25,13 @@ const renderDashboard = () => {
             }
             parsedData[indexOfEntry] = existingEntry;
         } else {
+            // determine the aspect number for this weapon/weapon aspect combo by counting how many entries we already have for this weapon base (since the data is sorted, this will give us the correct aspect number as we go along). Melinoë is always aspect 0, so if the aspect is Melinoë we override to 0 instead of counting.
+            var weaponAspectNumber = (parsedData.filter(entry => entry.weapon_base === weaponBase && entry.weapon_aspect !== "Melinoë")?.length || 0) + 1;
+            if (weaponAspect === "Melinoë") {
+                weaponAspectNumber = 0;
+            }
+            console.log(`Processing run with weapon ${weaponBase} and aspect ${weaponAspect} (aspect number ${weaponAspectNumber})`);
+
             parsedData.push( 
                 {
                     "weapon_base": weaponBase,
@@ -41,20 +48,30 @@ const renderDashboard = () => {
     console.log(parsedData);
 
     // Render the chart itself
+    const sortedDomain = [...new Set(parsedData.map(entry => entry.weapon_aspect_number))].sort((a, b) => a - b);
     const chart = Plot.plot({
         aspectRatio: 1.5,
+        marginLeft: 50, // Give the Y-axis labels room to breathe
         width: Math.min(rawRunData.length * 24, 1200),
         x: {
             axis: null,
             label: null,
-            domain: [...new Set(parsedData.map(entry => entry.weapon_aspect_number))],
+            domain: sortedDomain,
         },
         color: {
-            domain: ["fail", ...parsedData.map(entry => entry.weapon_aspect_number)],
-            // #545154 for semi-dark grays
-            range: ["#D4D4D4", "#7c94ab", "#ab7ca7", "#A5BC9A", "#D1A2AF"], // Gray for fails, then a custom palette for the aspects (up to 4 aspects per weapon, which is the current max in the game)
+            domain: ["fail", ...sortedDomain],
+            //Gray for fails, then a custom palette for the aspects (up to 4 aspects per weapon, which is the current max in the game)
+            range: ["#D4D4D4", "#7c94ab", "#ab7ca7", "#A5BC9A", "#D1A2AF"], 
             legend: true,
-            tickFormat: d => d === "fail" ? "Failure" : `Aspect #${d}`
+            tickFormat: d => {
+                if (d === "fail") {
+                    return "Failure";
+                } else if (d === 0) {
+                    return "Melinoë";
+                } else {
+                    return `Aspect Variant #${d}`;
+                }
+            }
         },
         fx: {
             domain: [...new Set(parsedData.map(entry => entry.weapon_base))],
@@ -64,6 +81,7 @@ const renderDashboard = () => {
             grid: true, 
             label: "Number of Runs", 
             labelAnchor: "center",
+            labelOffset: 50,
             domain: [0, Math.max(...parsedData.map(entry => entry.total))] 
         },
         marks: [
@@ -85,7 +103,12 @@ const renderDashboard = () => {
                 fillOpacity: 1, // Full opacity for Wins
                 stroke: "white",
                 strokeWidth: 0.5,
-                title: (d) => `Aspect of ${d.weapon_aspect}: ${d.success} Clears`
+                title: (d) => `Aspect of ${d.weapon_aspect}: ${d.success} Clears`,
+                sort: { 
+                    x: { channel: "weapon_aspect_number", reduce: "min" },
+                    color: null,
+                    fx: { value: "-y", reduce: "sum" } 
+                }
             }),
             Plot.ruleY([0])
         ],
